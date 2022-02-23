@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,700;0,900;1,600&display=swap');
+
+html, body{
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif !important;
+    color: #606060 !important;;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    height: 100%;
+}
+
+h1{
+    color: #001F4F !important;
+    font-weight: 900 !important;
+}
+
+.separador{
+    width: 100%;
+    height: 1px;
+    background-color: #dee6f0;
+    margin: 40px 0;
+}
+
+ul {
+    list-style: none;
+  }
+  
+ul li::before {
+    content: "\2022";
+    color: #086BC8; 
+    font-weight: bold; 
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em; 
+    font-size: 1.5rem;
+}
+
+b.darkBlueBold{
+    color: #013F8C;
+    font-size: 1.2rem;
+}
+
+.fill { 
+    min-height: 100%;
+    height: 100%;
+}
+
+/*Preguntas frecuentes*/
+
+h1.preguntasFrecuentes__title{
+    text-transform: uppercase;
+}
+
+.preguntasFrecuentes__acordeon.accordion-button{
+    border: 0;
+    color: #013F8C;
+    font-weight: 700;
+}
+
+.preguntasFrecuentes__acordeon.accordion-button:focus, .preguntasFrecuentes__acordeon.accordion-button:active{
+    outline: none !important;
+    box-shadow: none;
+}
+
+.preguntasFrecuentes__acordeon.accordion-button::after {
+    flex-shrink: 0;
+    width: 1.25rem;
+    height: 0.75rem;
+    margin-left: auto;
+    content: "";
+    background-image: url('../images/flecha.svg');
+    background-repeat: no-repeat;
+    background-size: 1.25rem;
+    transition: transform .2s ease-in-out;    
+}
+
+.preguntasFrecuentes__acordeon.accordion-button:not(.collapsed){
+    background-color: transparent;
+    border-bottom: 2px solid #086BC8;
+}
+
+.preguntasFrecuentes__acordeon.accordion-button.collapsed{
+    border-bottom: 2px solid #086BC8;
+}
+
+.preguntasFrecuentes__acordeon.accordion-item{
+    border: 0;
+}
+
+.preguntasFrecuentes__acordeon.accordion-body{
+    font-size: 1rem;
+    line-height: 2rem;
+}
+
+/* Campaña */
+
+.campaign__bg{
+    background-image: url('../images/campaign__bg.jpg');
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: block;
+    min-height: 100%;
+    height: 100%;
+    width: 100%;
+}
+
+.btn.campaign__botonVermas{
+    color: #fff;
+    font-style: italic;
+    font-weight: 500;
+    border: 1px solid #fff;
+    border-radius: 0;
+    padding: 15px 30px;
+}
+
