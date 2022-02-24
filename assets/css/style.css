@@ -26,7 +26,8 @@ html, body{
 h1{
     color: #001F4F !important;
     font-weight: 900 !important;
-    font-family: 'Acumin Pro Bold Italic';
+    font-family: 'Helvetica', Arial, sans-serif;
+    font-style: italic;
     text-transform: uppercase;
 }
 
@@ -150,7 +151,8 @@ h1.preguntasFrecuentes__title{
 
 h1.novedades__title{
     color: #001F4F;
-    font-family: 'Acumin Pro Bold Italic';
+    font-family: 'Helvetica', Arial, sans-serif;
+    font-style: italic;
     text-transform: uppercase;
 }
 
@@ -184,7 +186,8 @@ img.novedades__sideBarRight-img{
 h2.novedades__sideBarRight-title{
     color: #001F4F;
     font-weight: 700;
-    font-family: 'Acumin Pro Bold Italic';
+    font-family: 'Helvetica', Arial, sans-serif;
+    font-style: italic;
 }
 
 a.novedades__sideBarRightOtherNews-title{
@@ -218,7 +221,8 @@ p.novedades__sideBarRightOtherNews-text{
 h2.novedadSingle__title{
     color: #001F4F;
     font-weight: 700;
-    font-family: 'Acumin Pro Bold Italic';
+    font-family: 'Helvetica', Arial, sans-serif;
+    font-style: italic;
 }
 
 .novedadSingle__carrulesFotosItem{
@@ -243,6 +247,7 @@ h2.novedadSingle__title{
 
 .novedadSigle__moreNewsSection{
     background-color: #429ec7;
+    padding-bottom: 100px;
 }
 
 h2.novedadSingle__moreNewsSection-itemTitle{
@@ -261,3 +266,6 @@ p.novedadSingle__moreNewsSection-itemText{
     color: #001F4F;
     min-height: 100px;
 }
+
+/* Información comercial */
+
