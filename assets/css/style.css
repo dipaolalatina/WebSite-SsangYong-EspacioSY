@@ -1,5 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,700;0,900;1,600&display=swap');
 
+@font-face {
+    font-family: 'Acumin Pro Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Acumin Pro Bold'), url('../fonts/Acumin-BdPro.woff') format('woff');
+}
+    
+
+@font-face {
+    font-family: 'Acumin Pro Bold Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Acumin Pro Bold Italic'), url('../fonts/Acumin-BdItPro.woff') format('woff');
+}
+
 html, body{
     font-family: 'Montserrat', Arial, Helvetica, sans-serif !important;
     color: #606060 !important;;
@@ -11,13 +26,22 @@ html, body{
 h1{
     color: #001F4F !important;
     font-weight: 900 !important;
+    font-family: 'Acumin Pro Bold Italic';
+    text-transform: uppercase;
 }
 
 .separador{
     width: 100%;
     height: 1px;
     background-color: #dee6f0;
-    margin: 40px 0;
+    margin: 20px 0;
+}
+
+.separador-azul{
+    width: 100%;
+    height: 2px;
+    background-color: #001F4F;
+    margin: 20px 0;
 }
 
 ul {
@@ -42,6 +66,15 @@ b.darkBlueBold{
 .fill { 
     min-height: 100%;
     height: 100%;
+}
+
+.btn.btn-azul{
+    background-color: #001F4F;
+    color: #fff;
+    font-style: italic;
+    font-weight: 500;
+    border-radius: 0;
+    padding: 10px 60px;
 }
 
 /*Preguntas frecuentes*/
@@ -113,3 +146,118 @@ h1.preguntasFrecuentes__title{
     padding: 15px 30px;
 }
 
+/*Novedades*/
+
+h1.novedades__title{
+    color: #001F4F;
+    font-family: 'Acumin Pro Bold Italic';
+    text-transform: uppercase;
+}
+
+h6.novedades__subtitle{
+    color: #606060;
+}
+
+.novedades__item{
+    margin-top: 3rem;
+}
+
+h2.novedades__itemTitle{
+    color: #013F8C;
+    font-weight: 700;
+}
+
+h6.novedades__itemFecha{
+    text-align: right;
+}
+
+.novedades__sideBarRight{
+    background-color: #429EC6;
+    padding: 30px 0px;
+}
+
+img.novedades__sideBarRight-img{
+    width: 100%;
+    border-radius: 100%;
+}
+
+h2.novedades__sideBarRight-title{
+    color: #001F4F;
+    font-weight: 700;
+    font-family: 'Acumin Pro Bold Italic';
+}
+
+a.novedades__sideBarRightOtherNews-title{
+    color: #013F8C;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+p.novedades__sideBarRightOtherNews-text{
+    padding-top: 5px;
+    color: #001F4F;
+}
+
+.novedades__paginador{
+    margin: 30px 0;
+}
+
+.novedades__paginador > a{
+    text-decoration: none;
+    color: #001F4F;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.novedades__paginador > a.novedades__paginador-flecha{
+    text-decoration: none;
+    color: #086BC2;
+}
+
+h2.novedadSingle__title{
+    color: #001F4F;
+    font-weight: 700;
+    font-family: 'Acumin Pro Bold Italic';
+}
+
+.novedadSingle__carrulesFotosItem{
+    width: 95%;
+    margin: 0 auto;
+}
+
+.carousel-control-next, .carousel-control-prev{
+    width: 3%;
+    color: #086BC2;
+}
+
+.novedadSigle__descargarImgs{
+    padding-top:10px;
+    text-align: right;
+}
+
+.novedadSigle__descargarImgs a{
+    text-decoration: none;
+    color: #013F8C;
+}
+
+.novedadSigle__moreNewsSection{
+    background-color: #429ec7;
+}
+
+h2.novedadSingle__moreNewsSection-itemTitle{
+    color: #013F8C;
+    font-weight: 700;
+    min-height: 80px;
+}
+
+h5.novedadSingle__moreNewsSection-itemFecha{
+    color: #001F4F;
+    font-size: 0.9rem;
+    margin-top: 5px;
+}
+
+p.novedadSingle__moreNewsSection-itemText{
+    color: #001F4F;
+    min-height: 100px;
+}
