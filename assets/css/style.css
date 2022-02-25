@@ -37,6 +37,10 @@
 
 }
 
+@media (min-width: 1440px) { 
+
+}
+
 html, body{
     font-family: 'Montserrat', Arial, Helvetica, sans-serif !important;
     color: #606060 !important;;
@@ -161,13 +165,35 @@ h1.preguntasFrecuentes__title{
 
 .campaign__bg{
     background-image: url('../images/campaign__bg.jpg');
-    background-position: 50% 50%;
+    background-position: 100% 50%;
     background-size: cover;
     background-repeat: no-repeat;
     display: block;
     min-height: 100%;
     height: 100%;
     width: 100%;
+}
+
+@media (min-width: 1440px) { 
+    .campaign__bg{
+        background-position: 50% 50%;
+    }
+}
+
+.campaign__title{
+    width: 75%;
+}
+
+@media (min-width: 1200px) { 
+    .campaign__title{
+        width: 50%;
+    }
+}
+
+@media (min-width: 1440px) { 
+    .campaign__title{
+        width: 33%;
+    }
 }
 
 .btn.campaign__botonVermas{
@@ -258,13 +284,35 @@ h2.novedadSingle__title{
 }
 
 .novedadSingle__carrulesFotosItem{
-    width: 95%;
+    width: 93%;
     margin: 0 auto;
 }
 
 .carousel-control-next, .carousel-control-prev{
-    width: 3%;
+    width: 4%;
     color: #086BC2;
+}
+
+.carousel-control-prev:focus,
+.carousel-control-next:focus,
+.carousel-control-prev:hover,
+.carousel-control-next:hover{
+    color: #001F4F;
+}
+
+.carousel-control-prev-icon {
+    background-image: url('../images/flecha_prev.svg');
+    background-size: cover;
+}
+
+.carousel-control-next-icon {
+    background-image: url('../images/flecha_next.svg');
+    background-size: cover;
+}
+
+.carousel-control-next-icon, .carousel-control-prev-icon{
+    width: 3rem;
+    height: 5rem;
 }
 
 .novedadSigle__descargarImgs{
