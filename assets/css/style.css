@@ -15,6 +15,28 @@
     src: local('Acumin Pro Bold Italic'), url('../fonts/Acumin-BdItPro.woff') format('woff');
 }
 
+/*Media Query*/
+
+@media (min-width: 576px) { 
+
+}
+
+@media (min-width: 711px) { 
+
+}
+
+@media (min-width: 768px) { 
+
+}
+
+@media (min-width: 992px) { 
+
+}
+
+@media (min-width: 1200px) { 
+
+}
+
 html, body{
     font-family: 'Montserrat', Arial, Helvetica, sans-serif !important;
     color: #606060 !important;;
@@ -24,7 +46,7 @@ html, body{
 }
 
 h1{
-    color: #001F4F !important;
+    color: #001F4F;
     font-weight: 900 !important;
     font-family: 'Helvetica', Arial, sans-serif;
     font-style: italic;
@@ -77,6 +99,16 @@ b.darkBlueBold{
     border-radius: 0;
     padding: 10px 60px;
 }
+
+.btn.btnBlanco{
+    background-color: #fff;
+    color: #001F4F;
+    font-style: italic;
+    font-weight: 500;
+    border-radius: 0;
+    padding: 10px 60px;
+}
+
 
 /*Preguntas frecuentes*/
 
@@ -269,3 +301,47 @@ p.novedadSingle__moreNewsSection-itemText{
 
 /* Información comercial */
 
+h1.infoComercial__title{
+    color: #001F4F;
+    text-transform: uppercase; 
+}
+
+.infoComercial__bannerAll{
+    height: 400px;
+}
+
+@media (min-width: 768px) { 
+    .infoComercial__bannerAll{
+        height: 500px;
+    }
+}
+
+@media (min-width: 992px) { 
+    .infoComercial__bannerAll{
+        height: 700px;
+    }
+}
+
+.infoComercial__banner1,
+.infoComercial__banner2,
+.infoComercial__banner3{
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.infoComercial__banner1{
+    background-image: url('../images/infoComercial__banner1.jpg');
+}
+
+.infoComercial__banner2{
+    background-image: url('../images/infoComercial__banner2.jpg');
+}
+
+.infoComercial__banner3{
+    background-image: url('../images/infoComercial__banner3.jpg');
+}
+
+h1.infoComercial__bannerTitle{
+    color: #fff;
+}
