@@ -289,8 +289,15 @@ h2.novedadSingle__title{
 }
 
 .carousel-control-next, .carousel-control-prev{
-    width: 4%;
+    width: 12%;
     color: #086BC2;
+}
+
+@media (min-width: 992px) { 
+    .carousel-control-next, .carousel-control-prev{
+        width: 4%;
+        color: #086BC2;
+    }
 }
 
 .carousel-control-prev:focus,
