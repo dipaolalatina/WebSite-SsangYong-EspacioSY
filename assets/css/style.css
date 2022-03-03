@@ -694,3 +694,70 @@ p.espacioSY__parrafo-2{
 span.espacioSY__guionRojo{
     color: #d54022;
 }
+
+/* Sitio en construccion */
+
+.enConstruccion__bg-1{
+    background-image: url('../images/enConstruccion__bg-1.jpg');
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    text-align: center;
+}
+
+h2.enConstruccion__title-1{
+    color: #fff;
+    font-family: 'Roboto', Helvetica, Arial, sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+@media (min-width: 768px) { 
+    h2.enConstruccion__title-1{
+        font-size: 5.5rem;
+    }
+}
+
+h5.enConstruccion__subtitle-1{
+    color: #fff;
+    font-family: 'Roboto', Helvetica, Arial, sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+@media (min-width: 768px) { 
+    h5.enConstruccion__subtitle-1{
+        font-size: 1.5rem;
+    }
+}
+
+.enConstruccion__bg-2{
+    background-image: url('../images/enConstruccion__bg-2.jpg');
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    text-align: center;
+}
+
+.enConstruccion__bg-3{
+    background-image: url('../images/enConstruccion__bg-3.jpg');
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    text-align: center;
+}
+
+img.enConstruccion__elemento-1{
+    width: 100%;
+}
+
+@media (min-width: 768px) { 
+    img.enConstruccion__elemento-1{
+        width: 50%;
+    }
+}
