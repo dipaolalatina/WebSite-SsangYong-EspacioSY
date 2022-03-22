@@ -761,3 +761,47 @@ img.enConstruccion__elemento-1{
         width: 50%;
     }
 }
+
+/* Tabla modelos */
+
+.tablaActive{
+    display: block!important;
+}
+
+.tablaHide{
+    display: none!important;
+}
+
+h2.modelosTabla__title{
+    color: #001f4e;
+    font-weight: 900 !important;
+    font-family: 'Roboto', Arial, sans-serif;
+    
+}
+
+.modelosTabla__subtitle{
+    color: #001f4e;
+    font-family: 'Roboto', Arial, sans-serif;
+    font-size: 1.4rem;
+}
+
+table.tablaModelos{
+    color: #001f4e;
+}
+
+table.tablaModelos > thead > tr > th{
+    border: 2px solid #001f4e;
+    padding: 12px 0px;
+}
+
+table.tablaModelos > thead > tr > th > select#tablaVersiones{
+    border: none;
+    width: 100%;
+    padding: 0px 20px;
+    font-weight: 700;
+    color: #001f4e;
+}
+
+table.tablaModelos > thead > tr > th > select#tablaVersiones:focus{
+    outline: none
+} 
