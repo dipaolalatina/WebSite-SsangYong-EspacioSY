@@ -794,14 +794,42 @@ table.tablaModelos > thead > tr > th{
     padding: 12px 0px;
 }
 
-table.tablaModelos > thead > tr > th > select#tablaVersiones{
+table.tablaModelos > thead > tr > th.tablaVersiones_Atributos,
+table.tablaModelos > thead > tr > th.tablaVersiones_Versiones{
+    background-color: #001f4e;
+}
+
+table.tablaModelos > thead > tr > th > select#tablaVersiones,
+table.tablaModelos > thead > tr > th > select#tablaAtributos{
     border: none;
     width: 100%;
     padding: 0px 20px;
     font-weight: 700;
+    color: #fff;
+    text-align: center;
+    background-color: transparent;
+}
+
+table.tablaModelos > thead > tr > th > select#tablaVersiones:focus,
+table.tablaModelos > thead > tr > th > select#tablaAtributos:focus{
+    outline: none
+}
+
+table.tablaModelos > thead > tr > th > select#tablaVersiones > option,
+table.tablaModelos > thead > tr > th > select#tablaAtributos > option{
     color: #001f4e;
 }
 
-table.tablaModelos > thead > tr > th > select#tablaVersiones:focus{
-    outline: none
-} 
+table.tablaModelos > tbody > tr > td{
+    border: 1px solid #001f4e;
+    padding: 12px 0px;
+}
+
+table.tablaModelos > tbody > tr > td.tituloAtributos{
+    text-align: left;
+    padding-left: 50px;
+    color: #fff;
+    background-color: #001f4e;
+    font-weight: 700;
+    text-transform: uppercase;
+}
