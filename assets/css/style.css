@@ -58,6 +58,8 @@ h1{
     text-transform: uppercase;
 }
 
+.c-white{color: #fff!important}
+
 .separador{
     width: 100%;
     height: 1px;
