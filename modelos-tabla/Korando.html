@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html lang="es_ES">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Espacio Ssang Yong</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Custom styles for this template -->
+    <link href="../assets/css/style.css" rel="stylesheet">
+
+</head>
+<body>
+    <main>
+        <div class="container-fluid m-0 p-0">
+            <div class="row g-0">
+                <div class="col-12">
+                    <img src="../assets/images/modelos/modelosTablas/banner__Korando.jpg" class="w-100" alt="">
+                </div>
+            </div>
+            <div class="row modelos__cta g-0 align-items-center px-5 py-5">
+                <div class="col-12 col-sm-6">
+                    <h2 class="modelos__cta-title">Compara nuestros modelos entre ellos o con la competencia.</h2>
+                </div>
+                <div class="col-12 col-sm-6" style="text-align: right;">
+                    <a href="#tablaComparacion__section" class="modelos__cta-botonBlanco">Ir a tabla de comparación</a>
+                </div>
+            </div>
+            <div class="row g-0 my-4">
+                <div class="col-12 text-center">
+                    <h2 class="modelosTabla__title">Conoce todas las características del All New Korando.</h2>
+                    <p class="modelosTabla__subtitle">Elige un atributo y una versión del modelo.</p>
+                </div>
+            </div>
+        </div>
+        <div class="container mt-5">
+            <div class="row g-0">
+                <div class="col-12 text-center g-0">
+                    <table class="table tablaModelos">
+                        <thead>
+                            <tr>
+                                <th class="col-6">
+                                    Atributos
+                                </th>
+                                <th class="col-6">
+                                    Versiones
+                                </th>
+                            </tr>
+                            <tr>
+                                <th class="col-6 tablaVersiones_Atributos">
+                                    <select id="tablaAtributos" name="tablaVersiones_Atributos">
+                                        <option value="a1">TODOS</option>
+                                        <option value="a2">TRANSMISIÓN</option>
+                                        <option value="a3">MOTOR</option>
+                                        <option value="a4">DIMENSIONES, CAPACIDADES Y PESOS</option>
+                                        <option value="a5">EQUIPAMIENTO</option>
+                                        <option value="a6">SEGURIDAD</option>
+                                    </select>
+                                </th>
+                                <th class="col-6 tablaVersiones_Versiones">
+                                    <select id="tablaVersiones" name="tablaVersiones_Modelo">
+                                        <option value="m1">LX 1.5T 6MT 2WD</option>
+                                        <option value="m2">GLX 1.5T 6MT 2WD 6AB</option>
+                                        <option value="m3">GLX 1.5T 6AT 2WD 6AB</option>
+                                        <option value="m4">LIMITED 1.5T 6AT 2WD 6AB</option>
+                                        <option value="m5">GLX 1.6TD 6MT 2WD 6AB</option>
+                                        <option value="m6">GLX 1.6TD 6AT 2WD 6AB</option>
+                                    </select>
+                                </th>
+                            </tr>
+                        </thead>
+                    </table>
+                    <table class="table tablaModelos">
+                        <tbody>
+                            <tr>
+                                <td class="col-6">Tracción</td>
+                                <td class="col-6"><span class="modelo_1">2WD MT</span><span
+                                        class="modelo_2 tablaHide">2WD MT</span> <span class="modelo_3 tablaHide">2WD
+                                        AT</span> <span class="modelo_4 tablaHide">2WD AT</span> <span
+                                        class="modelo_5 tablaHide">2WD MT</span><span class="modelo_6 tablaHide">2WD
+                                        AT</span></td>
+                            </tr>
+                            <tr class="atributo_1">
+                                <td colspan="2" class="tituloAtributos">Transmisión</td>
+                            </tr>
+                            <tr class="atributo_1">
+                                <td class="col-6">Caja De Cambios</td>
+                                <td class="col-6"><span class="modelo_1">Mecánica 6 Vel + Rev</span><span
+                                        class="modelo_2 tablaHide">Mecánica 6 Vel + Rev</span> <span
+                                        class="modelo_3 tablaHide">Automática AISIN 6 Vel + Rev</span> <span
+                                        class="modelo_4 tablaHide">Automática AISIN 6 Vel + Rev</span> <span
+                                        class="modelo_5 tablaHide">Mecánica 6 Vel + Rev</span><span
+                                        class="modelo_6 tablaHide">Automática AISIN 6 Vel + Rev</span></td>
+                            </tr>
+                            <tr class="atributo_2">
+                                <td colspan="2" class="tituloAtributos">Motor</td>
+                            </tr>
+                            <tr class="atributo_2">
+                                <td class="col-6">Cilindrada (Cc)</td>
+                                <td class="col-6"><span class="modelo_1">1497</span><span
+                                        class="modelo_2 tablaHide">1497</span> <span
+                                        class="modelo_3 tablaHide">1497</span> <span
+                                        class="modelo_4 tablaHide">1497</span> <span
+                                        class="modelo_5 tablaHide">1597</span><span
+                                        class="modelo_6 tablaHide">1597</span></td>
+                            </tr>
+                            <tr class="atributo_2">
+                                <td class="col-6">Número De Cilindros Y Disposición</td>
+                                <td class="col-6"><span class="modelo_1">4 en línea</span><span
+                                        class="modelo_2 tablaHide">4 en línea</span> <span class="modelo_3 tablaHide">4
+                                        en línea</span> <span class="modelo_4 tablaHide">4 en línea</span> <span
+                                        class="modelo_5 tablaHide">4 en línea</span><span class="modelo_6 tablaHide">4
+                                        en línea</span></td>
+                            </tr>
+                            <tr class="atributo_2">
+                                <td class="col-6">Combustible</td>
+                                <td class="col-6"><span class="modelo_1">GASOLINA 95 Oct</span><span
+                                        class="modelo_2 tablaHide">GASOLINA 95 Oct</span> <span
+                                        class="modelo_3 tablaHide">GASOLINA 95 Oct</span> <span
+                                        class="modelo_4 tablaHide">GASOLINA 95 Oct</span> <span
+                                        class="modelo_5 tablaHide">DIESEL</span><span
+                                        class="modelo_6 tablaHide">DIESEL</span></td>
+                            </tr>
+                            <tr class="atributo_2">
+                                <td class="col-6">Potencia Máxima (Hp/R.P.M.)</td>
+                                <td class="col-6"><span class="modelo_1">161 / 5.000-5500</span><span
+                                        class="modelo_2 tablaHide">161 / 5.000-5500</span> <span
+                                        class="modelo_3 tablaHide">161 / 5.000-5500</span> <span
+                                        class="modelo_4 tablaHide">161 / 5.000-5500</span> <span
+                                        class="modelo_5 tablaHide">134 / 4.000</span><span
+                                        class="modelo_6 tablaHide">134 / 4.000</span></td>
+                            </tr>
+                            <tr class="atributo_2">
+                                <td class="col-6">Torque Máximo (Nm/R.P.M.)</td>
+                                <td class="col-6"><span class="modelo_1">280 / 1.500-4000</span><span
+                                        class="modelo_2 tablaHide">280 / 1.500-4000</span> <span
+                                        class="modelo_3 tablaHide">280 / 1.500-4000</span> <span
+                                        class="modelo_4 tablaHide">280 / 1.500-4000</span> <span
+                                        class="modelo_5 tablaHide">300 / 1.500-2.500</span><span
+                                        class="modelo_6 tablaHide">300 / 1.500-2.500</span></td>
+                            </tr>
+                            <tr class="atributo_2">
+                                <td class="col-6">Relación De Compresión</td>
+                                <td class="col-6"><span class="modelo_1">9.5 : 1</span><span
+                                        class="modelo_2 tablaHide">9.5 : 1</span> <span class="modelo_3 tablaHide">9.5 :
+                                        1</span> <span class="modelo_4 tablaHide">9.5 : 1</span> <span
+                                        class="modelo_5 tablaHide">15.5 : 1</span><span class="modelo_6 tablaHide">15.5
+                                        : 1</span></td>
+                            </tr>
+                            <tr class="atributo_2">
+                                <td class="col-6">Inyección</td>
+                                <td class="col-6"><span class="modelo_1">Directa</span><span
+                                        class="modelo_2 tablaHide">Directa</span> <span
+                                        class="modelo_3 tablaHide">Directa</span> <span
+                                        class="modelo_4 tablaHide">Directa</span> <span
+                                        class="modelo_5 tablaHide">Directa</span><span
+                                        class="modelo_6 tablaHide">Directa</span></td>
+                            </tr>
+                            <tr class="atributo_2">
+                                <td class="col-6">Sobrealimentación</td>
+                                <td class="col-6"><span class="modelo_1">Turbo E-WGA + Intercooler</span><span
+                                        class="modelo_2 tablaHide">Turbo E-WGA + Intercooler</span> <span
+                                        class="modelo_3 tablaHide">Turbo E-WGA + Intercooler</span> <span
+                                        class="modelo_4 tablaHide">Turbo E-WGA + Intercooler</span> <span
+                                        class="modelo_5 tablaHide">Turbo VGT + Intercooler</span><span
+                                        class="modelo_6 tablaHide">Turbo VGT + Intercooler</span></td>
+                            </tr>
+                            <tr class="atributo_2">
+                                <td class="col-6">Eje De Levas / Válvulas</td>
+                                <td class="col-6"><span class="modelo_1">DOHC 16VV/DUAL CVVT</span><span
+                                        class="modelo_2 tablaHide">DOHC 16VV/DUAL CVVT</span> <span
+                                        class="modelo_3 tablaHide">DOHC 16VV/DUAL CVVT</span> <span
+                                        class="modelo_4 tablaHide">DOHC 16VV/DUAL CVVT</span> <span
+                                        class="modelo_5 tablaHide">DOHC 16 Válvulas</span><span
+                                        class="modelo_6 tablaHide">DOHC 16 Válvulas</span></td>
+                            </tr>
+                            <tr class="atributo_2">
+                                <td class="col-6">Reducción Catalítica Selectiva (Scr)</td>
+                                <td class="col-6"><span class="modelo_1">-</span><span
+                                        class="modelo_2 tablaHide">-</span> <span class="modelo_3 tablaHide">-</span>
+                                    <span class="modelo_4 tablaHide">-</span> <span
+                                        class="modelo_5 tablaHide">SI</span><span class="modelo_6 tablaHide">SI</span>
+                                </td>
+                            </tr>
+                            <tr class="atributo_2">
+                                <td class="col-6">Agente Reductor</td>
+                                <td class="col-6"><span class="modelo_1">-</span><span
+                                        class="modelo_2 tablaHide">-</span> <span class="modelo_3 tablaHide">-</span>
+                                    <span class="modelo_4 tablaHide">-</span> <span
+                                        class="modelo_5 tablaHide">Urea</span><span
+                                        class="modelo_6 tablaHide">Urea</span></td>
+                            </tr>
+                            <tr class="atributo_2">
+                                <td class="col-6">Capacidad Depósito Agente Reductor (Lts)</td>
+                                <td class="col-6"><span class="modelo_1">-</span><span
+                                        class="modelo_2 tablaHide">-</span> <span class="modelo_3 tablaHide">-</span>
+                                    <span class="modelo_4 tablaHide">-</span> <span
+                                        class="modelo_5 tablaHide">12</span><span class="modelo_6 tablaHide">12</span>
+                                </td>
+                            </tr>
+                            <tr class="atributo_2">
+                                <td class="col-6">Norma De Emisión</td>
+                                <td class="col-6"><span class="modelo_1">EURO 6d</span><span
+                                        class="modelo_2 tablaHide">EURO 6d</span> <span class="modelo_3 tablaHide">EURO
+                                        6d</span> <span class="modelo_4 tablaHide">EURO 6d</span> <span
+                                        class="modelo_5 tablaHide">EURO 6d</span><span class="modelo_6 tablaHide">EURO
+                                        6d</span></td>
+                            </tr>
+                            <tr class="atributo_3">
+                                <td colspan="2" class="tituloAtributos">DIMENSIONES, CAPACIDADES Y PESOS</td>
+                            </tr>
+                            <tr class="atributo_3">
+                                <td class="col-6">Número De Puertas</td>
+                                <td class="col-6"><span class="modelo_1">5</span><span
+                                        class="modelo_2 tablaHide">5</span> <span class="modelo_3 tablaHide">5</span>
+                                    <span class="modelo_4 tablaHide">5</span> <span
+                                        class="modelo_5 tablaHide">5</span><span class="modelo_6 tablaHide">5</span>
+                                </td>
+                            </tr>
+                            <tr class="atributo_3">
+                                <td class="col-6">Número De Plazas Adulto</td>
+                                <td class="col-6"><span class="modelo_1">5</span><span
+                                        class="modelo_2 tablaHide">5</span> <span class="modelo_3 tablaHide">5</span>
+                                    <span class="modelo_4 tablaHide">5</span> <span
+                                        class="modelo_5 tablaHide">5</span><span class="modelo_6 tablaHide">5</span>
+                                </td>
+                            </tr>
+                            <tr class="atributo_3">
+                                <td class="col-6">Largo / Ancho / Alto (Mm)</td>
+                                <td class="col-6"><span class="modelo_1">4.450 /1.870 / 1.620 sin barras de techo -
+                                        1.626 con barras de techo</span><span class="modelo_2 tablaHide">4.450 /1.870 /
+                                        1.620 sin barras de techo - 1.626 con barras de techo</span> <span
+                                        class="modelo_3 tablaHide">4.450 /1.870 / 1.620 sin barras de techo - 1.626 con
+                                        barras de techo</span> <span class="modelo_4 tablaHide">4.450 /1.870 / 1.620 sin
+                                        barras de techo - 1.626 con barras de techo</span> <span
+                                        class="modelo_5 tablaHide">4.450 /1.870 / 1.620 sin barras de techo - 1.626 con
+                                        barras de techo</span><span class="modelo_6 tablaHide">4.450 /1.870 / 1.620 sin
+                                        barras de techo - 1.626 con barras de techo</span></td>
+                            </tr>
+                            <tr class="atributo_3">
+                                <td class="col-6">Distancia Entre Ejes (Mm)</td>
+                                <td class="col-6"><span class="modelo_1">2675</span><span
+                                        class="modelo_2 tablaHide">2675</span> <span
+                                        class="modelo_3 tablaHide">2675</span> <span
+                                        class="modelo_4 tablaHide">2675</span> <span
+                                        class="modelo_5 tablaHide">2675</span><span
+                                        class="modelo_6 tablaHide">2675</span></td>
+                            </tr>
+                            <tr class="atributo_3">
+                                <td class="col-6">Capacidad Estanque De Combustible (Lts)</td>
+                                <td class="col-6"><span class="modelo_1">50</span><span
+                                        class="modelo_2 tablaHide">50</span> <span class="modelo_3 tablaHide">50</span>
+                                    <span class="modelo_4 tablaHide">50</span> <span
+                                        class="modelo_5 tablaHide">47</span><span class="modelo_6 tablaHide">47</span>
+                                </td>
+                            </tr>
+                            <tr class="atributo_3">
+                                <td class="col-6">Peso Bruto (Kg)</td>
+                                <td class="col-6"><span class="modelo_1">1955</span><span
+                                        class="modelo_2 tablaHide">1955</span> <span
+                                        class="modelo_3 tablaHide">2040</span> <span
+                                        class="modelo_4 tablaHide">2040</span> <span
+                                        class="modelo_5 tablaHide">2030</span><span
+                                        class="modelo_6 tablaHide">2160</span></td>
+                            </tr>
+                            <tr class="atributo_3">
+                                <td class="col-6">Capacidad De Carga Total (Kg)</td>
+                                <td class="col-6"><span class="modelo_1">525</span><span
+                                        class="modelo_2 tablaHide">525</span> <span
+                                        class="modelo_3 tablaHide">605</span> <span
+                                        class="modelo_4 tablaHide">605</span> <span
+                                        class="modelo_5 tablaHide">605</span><span class="modelo_6 tablaHide">625</span>
+                                </td>
+                            </tr>
+                            <tr class="atributo_3">
+                                <td class="col-6">Capacidad Remolque Con Frenos (Kg)</td>
+                                <td class="col-6"><span class="modelo_1">1500</span><span
+                                        class="modelo_2 tablaHide">1500</span> <span
+                                        class="modelo_3 tablaHide">1500</span> <span
+                                        class="modelo_4 tablaHide">1500</span> <span
+                                        class="modelo_5 tablaHide">1500</span><span
+                                        class="modelo_6 tablaHide">2000</span></td>
+                            </tr>
+                            <tr class="atributo_3">
+                                <td class="col-6">Capacidad Remolque Sin Frenos (Kg)</td>
+                                <td class="col-6"><span class="modelo_1">500</span><span
+                                        class="modelo_2 tablaHide">500</span> <span
+                                        class="modelo_3 tablaHide">500</span> <span
+                                        class="modelo_4 tablaHide">500</span> <span
+                                        class="modelo_5 tablaHide">500</span><span class="modelo_6 tablaHide">750</span>
+                                </td>
+                            </tr>
+                            <tr class="atributo_3">
+                                <td class="col-6">Neumáticos</td>
+                                <td class="col-6"><span class="modelo_1">225/60R17</span><span
+                                        class="modelo_2 tablaHide">235/55R18</span> <span
+                                        class="modelo_3 tablaHide">235/55R18</span> <span
+                                        class="modelo_4 tablaHide">235/50R19</span> <span
+                                        class="modelo_5 tablaHide">235/55R18</span><span
+                                        class="modelo_6 tablaHide">235/50R18</span></td>
+                            </tr>
+                            <tr class="atributo_3">
+                                <td class="col-6">Neumático De Repuesto Completo Con Llanta</td>
+                                <td class="col-6"><span class="modelo_1">SI</span><span
+                                        class="modelo_2 tablaHide">SI</span> <span class="modelo_3 tablaHide">SI</span>
+                                    <span class="modelo_4 tablaHide">SI</span> <span
+                                        class="modelo_5 tablaHide">SI</span><span class="modelo_6 tablaHide">SI</span>
+                                </td>
+                            </tr>
+                            <tr class="atributo_4">
+                                <td colspan="2" class="tituloAtributos">EQUIPAMIENTO</td>
+                            </tr>
+                            <tr class="atributo_4">
+                                <td class="col-6">Aire Acondicionado</td>
+                                <td class="col-6"><span class="modelo_1">SI</span><span
+                                        class="modelo_2 tablaHide">SI</span> <span class="modelo_3 tablaHide">SI</span>
+                                    <span class="modelo_4 tablaHide">-</span> <span
+                                        class="modelo_5 tablaHide">SI</span><span class="modelo_6 tablaHide">SI</span>
+                                </td>
+                            </tr>
+                            <tr class="atributo_4">
+                                <td class="col-6">Climatizador Bizona</td>
+                                <td class="col-6"><span class="modelo_1">-</span><span
+                                        class="modelo_2 tablaHide">-</span> <span class="modelo_3 tablaHide">-</span>
+                                    <span class="modelo_4 tablaHide">SI</span> <span
+                                        class="modelo_5 tablaHide">-</span><span class="modelo_6 tablaHide">-</span>
+                                </td>
+                            </tr>
+                            <tr class="atributo_4">
+                                <td class="col-6">Smart Audio (Car Play & Android Auto) Con Pantalla Touch De 8”</td>
+                                <td class="col-6"><span class="modelo_1">SI</span><span
+                                        class="modelo_2 tablaHide">SI</span> <span class="modelo_3 tablaHide">SI</span>
+                                    <span class="modelo_4 tablaHide">SI</span> <span
+                                        class="modelo_5 tablaHide">SI</span><span class="modelo_6 tablaHide">SI</span>
+                                </td>
+                            </tr>
+                            <tr class="atributo_4">
+                                <td class="col-6">6 Parlantes</td>
+                                <td class="col-6"><span class="modelo_1">SI</span><span
+                                        class="modelo_2 tablaHide">SI</span> <span class="modelo_3 tablaHide">SI</span>
+                                    <span class="modelo_4 tablaHide">SI</span> <span
+                                        class="modelo_5 tablaHide">SI</span><span class="modelo_6 tablaHide">SI</span>
+                                </td>
+                            </tr>
+                            <tr class="atributo_4">
+                                <td class="col-6">Smart Key (Botón De Arranque)</td>
+                                <td class="col-6"><span class="modelo_1">-</span><span
+                                        class="modelo_2 tablaHide">-</span> <span class="modelo_3 tablaHide">-</span>
+                                    <span class="modelo_4 tablaHide">SI</span> <span
+                                        class="modelo_5 tablaHide">-</span><span class="modelo_6 tablaHide">-</span>
+                                </td>
+                            </tr>
+                            <tr class="atributo_4">
+                                <td class="col-6">Control De Audio Al Volante</td>
+                                <td class="col-6"><span class="modelo_1">SI</span><span
+                                        class="modelo_2 tablaHide">SI</span> <span class="modelo_3 tablaHide">SI</span>
+                                    <span class="modelo_4 tablaHide">SI</span> <span
+                                        class="modelo_5 tablaHide">SI</span><span class="modelo_6 tablaHide">SI</span>
+                                </td>
+                            </tr>
+                            <tr class="atributo_4">
+                                <td class="col-6">Dirección Asistida Electrónicamente</td>
+                                <td class="col-6"><span class="modelo_1">SI</span><span
+                                        class="modelo_2 tablaHide">SI</span> <span class="modelo_3 tablaHide">SI</span>
+                                    <span class="modelo_4 tablaHide">SI</span> <span
+                                        class="modelo_5 tablaHide">SI</span><span class="modelo_6 tablaHide">SI</span>
+                                </td>
+                            </tr>
+                            <tr class="atributo_4">
+                                <td class="col-6">Control Crucero</td>
+                                <td class="col-6"><span class="modelo_1">SI</span><span
+                                        class="modelo_2 tablaHide">SI</span> <span class="modelo_3 tablaHide">SI</span>
+                                    <span class="modelo_4 tablaHide">SI</span> <span
+                                        class="modelo_5 tablaHide">SI</span><span class="modelo_6 tablaHide">SI</span>
+                                </td>
+                            </tr>
+                            <tr class="atributo_4">
+                                <td class="col-6">Sensor De Lluvia Y Encendido Automático De Luces</td>
+                                <td class="col-6"><span class="modelo_1">-</span><span
+                                        class="modelo_2 tablaHide">-</span> <span class="modelo_3 tablaHide">-</span>
+                                    <span class="modelo_4 tablaHide">SI</span> <span
+                                        class="modelo_5 tablaHide">-</span><span class="modelo_6 tablaHide">-</span>
+                                </td>
+                            </tr>
+                            <tr class="atributo_4">
+                                <td class="col-6">Asientos Con Tapiz De Cuero Ecológico Y Tela</td>
+                                <td class="col-6"><span class="modelo_1">-</span><span
+                                        class="modelo_2 tablaHide">-</span> <span class="modelo_3 tablaHide">-</span>
+                                    <span class="modelo_4 tablaHide">SI</span> <span
+                                        class="modelo_5 tablaHide">-</span><span class="modelo_6 tablaHide">-</span>
+                                </td>
+                            </tr>
+                            <tr class="atributo_4">
+                                <td class="col-6">Asientos Con Tapiz De Tela</td>
+                                <td class="col-6"><span class="modelo_1">SI</span><span
+                                        class="modelo_2 tablaHide">SI</span> <span class="modelo_3 tablaHide">SI</span>
+                                    <span class="modelo_4 tablaHide">-</span> <span
+                                        class="modelo_5 tablaHide">SI</span><span class="modelo_6 tablaHide">SI</span>
+                                </td>
+                            </tr>
+                            <tr class="atributo_4">
+                                <td class="col-6">Cierre Centralizado De Puertas</td>
+                                <td class="col-6"><span class="modelo_1">SI</span><span
+                                        class="modelo_2 tablaHide">SI</span> <span class="modelo_3 tablaHide">SI</span>
+                                    <span class="modelo_4 tablaHide">SI</span> <span
+                                        class="modelo_5 tablaHide">SI</span><span class="modelo_6 tablaHide">SI</span>
+                                </td>
+                            </tr>
+                            <tr class="atributo_4">
+                                <td class="col-6">Alzavidrios Eléctricos</td>
+                                <td class="col-6"><span class="modelo_1">SI</span><span
+                                        class="modelo_2 tablaHide">SI</span> <span class="modelo_3 tablaHide">SI</span>
+                                    <span class="modelo_4 tablaHide">SI</span> <span
+                                        class="modelo_5 tablaHide">SI</span><span class="modelo_6 tablaHide">SI</span>
+                                </td>
+                            </tr>
+                            <tr class="atributo_4">
+                                <td class="col-6">Espejos Exteriores Con Defroster Y Ajustables Electricamente</td>
+                                <td class="col-6"><span class="modelo_1">SI</span><span
+                                        class="modelo_2 tablaHide">SI</span> <span class="modelo_3 tablaHide">SI</span>
+                                    <span class="modelo_4 tablaHide">SI</span> <span
+                                        class="modelo_5 tablaHide">SI</span><span class="modelo_6 tablaHide">SI</span>
+                                </td>
+                            </tr>
+                            <tr class="atributo_4">
+                                <td class="col-6">Cargador Inalámbrico En Consola Central</td>
+                                <td class="col-6"><span class="modelo_1">-</span><span
+                                        class="modelo_2 tablaHide">-</span> <span class="modelo_3 tablaHide">-</span>
+                                    <span class="modelo_4 tablaHide">SI</span> <span
+                                        class="modelo_5 tablaHide">-</span><span class="modelo_6 tablaHide">-</span>
+                                </td>
+                            </tr>
+                            <tr class="atributo_4">
+                                <td class="col-6">Manillas Interiores Cromadas</td>
+                                <td class="col-6"><span class="modelo_1">SI</span><span
+                                        class="modelo_2 tablaHide">SI</span> <span class="modelo_3 tablaHide">SI</span>
+                                    <span class="modelo_4 tablaHide">SI</span> <span
+                                        class="modelo_5 tablaHide">SI</span><span class="modelo_6 tablaHide">SI</span>
+                                </td>
+                            </tr>
+                            <tr class="atributo_4">
+                                <td class="col-6">Asientos Traseros Reclinables</td>
+                                <td class="col-6"><span class="modelo_1">SI</span><span
+                                        class="modelo_2 tablaHide">SI</span> <span class="modelo_3 tablaHide">SI</span>
+                                    <span class="modelo_4 tablaHide">SI</span> <span
+                                        class="modelo_5 tablaHide">SI</span><span class="modelo_6 tablaHide">SI</span>
+                                </td>
+                            </tr>
+                            <tr class="atributo_4">
+                                <td class="col-6">Luz Día (Drl)</td>
+                                <td class="col-6"><span class="modelo_1">-</span><span
+                                        class="modelo_2 tablaHide">SI</span> <span class="modelo_3 tablaHide">SI</span>
+                                    <span class="modelo_4 tablaHide">SI</span> <span
+                                        class="modelo_5 tablaHide">SI</span><span class="modelo_6 tablaHide">SI</span>
+                                </td>
+                            </tr>
+                            <tr class="atributo_4">
+                                <td class="col-6">Ajuste Manual Cabecera Conductor Y Pasajero</td>
+                                <td class="col-6"><span class="modelo_1">SI</span><span
+                                        class="modelo_2 tablaHide">SI</span> <span class="modelo_3 tablaHide">SI</span>
+                                    <span class="modelo_4 tablaHide">SI</span> <span
+                                        class="modelo_5 tablaHide">SI</span><span class="modelo_6 tablaHide">SI</span>
+                                </td>
+                            </tr>
+                            <tr class="atributo_4">
+                                <td class="col-6">Panel De Instrumentos De 3.5" Con Pantalla Lcd</td>
+                                <td class="col-6"><span class="modelo_1">SI</span><span
+                                        class="modelo_2 tablaHide">SI</span> <span class="modelo_3 tablaHide">SI</span>
+                                    <span class="modelo_4 tablaHide">SI</span> <span
+                                        class="modelo_5 tablaHide">SI</span><span class="modelo_6 tablaHide">SI</span>
+                                </td>
+                            </tr>
+                            <tr class="atributo_4">
+                                <td class="col-6">Vidrios Tinteados</td>
+                                <td class="col-6"><span class="modelo_1">SI</span><span
+                                        class="modelo_2 tablaHide">SI</span> <span class="modelo_3 tablaHide">SI</span>
+                                    <span class="modelo_4 tablaHide">SI</span> <span
+                                        class="modelo_5 tablaHide">SI</span><span class="modelo_6 tablaHide">SI</span>
+                                </td>
+                            </tr>
+                            <tr class="atributo_4">
+                                <td class="col-6">Espejo Interior En Visera Con Iluminación</td>
+                                <td class="col-6"><span class="modelo_1">SI</span><span
+                                        class="modelo_2 tablaHide">SI</span> <span class="modelo_3 tablaHide">SI</span>
+                                    <span class="modelo_4 tablaHide">SI</span> <span
+                                        class="modelo_5 tablaHide">SI</span><span class="modelo_6 tablaHide">SI</span>
+                                </td>
+                            </tr>
+                            <tr class="atributo_4">
+                                <td class="col-6">Parabrisas Con Control De Ruido</td>
+                                <td class="col-6"><span class="modelo_1">SI</span><span
+                                        class="modelo_2 tablaHide">SI</span> <span class="modelo_3 tablaHide">SI</span>
+                                    <span class="modelo_4 tablaHide">SI</span> <span
+                                        class="modelo_5 tablaHide">SI</span><span class="modelo_6 tablaHide">SI</span>
+                                </td>
+                            </tr>
+                            <tr class="atributo_4">
+                                <td class="col-6">Volante De Cuero</td>
+                                <td class="col-6"><span class="modelo_1">-</span><span
+                                        class="modelo_2 tablaHide">SI</span> <span class="modelo_3 tablaHide">SI</span>
+                                    <span class="modelo_4 tablaHide">SI</span> <span
+                                        class="modelo_5 tablaHide">SI</span><span class="modelo_6 tablaHide">SI</span>
+                                </td>
+                            </tr>
+                            <tr class="atributo_4">
+                                <td class="col-6">Barras En Techo</td>
+                                <td class="col-6"><span class="modelo_1">-</span><span
+                                        class="modelo_2 tablaHide">SI</span> <span class="modelo_3 tablaHide">SI</span>
+                                    <span class="modelo_4 tablaHide">SI</span> <span
+                                        class="modelo_5 tablaHide">SI</span><span class="modelo_6 tablaHide">SI</span>
+                                </td>
+                            </tr>
+                            <tr class="atributo_5">
+                                <td colspan="2" class="tituloAtributos">SEGURIDAD</td>
+                            </tr>
+                            <tr class="atributo_5">
+                                <td class="col-6">Sistema Mitigación De Impacto Adas **
+                                    (Aebs-Ldw-Lka-Hba-Fvsa-Daa-Sda-Fcw)</td>
+                                <td class="col-6"><span class="modelo_1">-</span><span
+                                        class="modelo_2 tablaHide">-</span> <span class="modelo_3 tablaHide">-</span>
+                                    <span class="modelo_4 tablaHide">SI</span> <span
+                                        class="modelo_5 tablaHide">-</span><span class="modelo_6 tablaHide">-</span>
+                                </td>
+                            </tr>
+                            <tr class="atributo_5">
+                                <td class="col-6">Cantidad De Airbags</td>
+                                <td class="col-6"><span class="modelo_1">2</span><span
+                                        class="modelo_2 tablaHide">6</span> <span class="modelo_3 tablaHide">6</span>
+                                    <span class="modelo_4 tablaHide">6</span> <span
+                                        class="modelo_5 tablaHide">6</span><span class="modelo_6 tablaHide">6</span>
+                                </td>
+                            </tr>
+                            <tr class="atributo_5">
+                                <td class="col-6">Cinturones Traseros De 3 Puntas</td>
+                                <td class="col-6"><span class="modelo_1">SI</span><span
+                                        class="modelo_2 tablaHide">SI</span> <span class="modelo_3 tablaHide">SI</span>
+                                    <span class="modelo_4 tablaHide">SI</span> <span
+                                        class="modelo_5 tablaHide">SI</span><span class="modelo_6 tablaHide">SI</span>
+                                </td>
+                            </tr>
+                            <tr class="atributo_5">
+                                <td class="col-6">Frenos Abs Con Ebd</td>
+                                <td class="col-6"><span class="modelo_1">SI</span><span
+                                        class="modelo_2 tablaHide">SI</span> <span class="modelo_3 tablaHide">SI</span>
+                                    <span class="modelo_4 tablaHide">SI</span> <span
+                                        class="modelo_5 tablaHide">SI</span><span class="modelo_6 tablaHide">SI</span>
+                                </td>
+                            </tr>
+                            <tr class="atributo_5">
+                                <td class="col-6">Sistema Esp Incluye * (Tcs - Arp - Hba - Hsa - Ess - Hdc)</td>
+                                <td class="col-6"><span class="modelo_1">-</span><span
+                                        class="modelo_2 tablaHide">-</span> <span class="modelo_3 tablaHide">-</span>
+                                    <span class="modelo_4 tablaHide">SI</span> <span
+                                        class="modelo_5 tablaHide">SI</span><span class="modelo_6 tablaHide">SI</span>
+                                </td>
+                            </tr>
+                            <tr class="atributo_5">
+                                <td class="col-6">Sistema De Anclaje Isofix Para Sillas De Seguridad De Niños</td>
+                                <td class="col-6"><span class="modelo_1">SI</span><span
+                                        class="modelo_2 tablaHide">SI</span> <span class="modelo_3 tablaHide">SI</span>
+                                    <span class="modelo_4 tablaHide">SI</span> <span
+                                        class="modelo_5 tablaHide">SI</span><span class="modelo_6 tablaHide">SI</span>
+                                </td>
+                            </tr>
+                            <tr class="atributo_5">
+                                <td class="col-6">Sensor De Estacionamiento Delantero</td>
+                                <td class="col-6"><span class="modelo_1">-</span><span
+                                        class="modelo_2 tablaHide">SI</span> <span class="modelo_3 tablaHide">SI</span>
+                                    <span class="modelo_4 tablaHide">SI</span> <span
+                                        class="modelo_5 tablaHide">SI</span><span class="modelo_6 tablaHide">SI</span>
+                                </td>
+                            </tr>
+                            <tr class="atributo_5">
+                                <td class="col-6">Cámara Y Sensor De Estacionamiento Trasero</td>
+                                <td class="col-6"><span class="modelo_1">-</span><span
+                                        class="modelo_2 tablaHide">SI</span> <span class="modelo_3 tablaHide">SI</span>
+                                    <span class="modelo_4 tablaHide">SI</span> <span
+                                        class="modelo_5 tablaHide">SI</span><span class="modelo_6 tablaHide">SI</span>
+                                </td>
+                            </tr>
+                            <tr class="atributo_5">
+                                <td class="col-6">Señalizador Led En Los Espejos</td>
+                                <td class="col-6"><span class="modelo_1">SI</span><span
+                                        class="modelo_2 tablaHide">SI</span> <span class="modelo_3 tablaHide">SI</span>
+                                    <span class="modelo_4 tablaHide">SI</span> <span
+                                        class="modelo_5 tablaHide">SI</span><span class="modelo_6 tablaHide">SI</span>
+                                </td>
+                            </tr>
+                            <tr class="atributo_5">
+                                <td class="col-6">Inmovilizador De Motor Antirrobo</td>
+                                <td class="col-6"><span class="modelo_1">SI</span><span
+                                        class="modelo_2 tablaHide">SI</span> <span class="modelo_3 tablaHide">SI</span>
+                                    <span class="modelo_4 tablaHide">SI</span> <span
+                                        class="modelo_5 tablaHide">SI</span><span class="modelo_6 tablaHide">SI</span>
+                                </td>
+                            </tr>
+                            <tr class="atributo_5">
+                                <td class="col-6">Alarma</td>
+                                <td class="col-6"><span class="modelo_1">SI</span><span
+                                        class="modelo_2 tablaHide">SI</span> <span class="modelo_3 tablaHide">SI</span>
+                                    <span class="modelo_4 tablaHide">SI</span> <span
+                                        class="modelo_5 tablaHide">SI</span><span class="modelo_6 tablaHide">SI</span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="row g-0 my-5" id="tablaComparacion__section">
+                <div class="col-12 text-center">
+                    <h2 class="modelosTabla__title">Lorem ipsum dolor</h2>
+                    <p class="modelosTabla__subtitle">Sed ut perspiciatis unde omnis iste natus error sit voluptatem</p>
+                </div>
+            </div>
+            <div class="row g-0">
+                <div class="col-12 col-sm-4 my-3">
+                    <p class="text-center">
+                        <a href="#" class="modelos__cta-botonAzul w-75">LX 1.5T 6MT 2WD</a>
+                    </p>                    
+                </div>
+                <div class="col-12 col-sm-4 my-3">
+                    <p class="text-center">
+                        <a href="#" class="modelos__cta-botonAzul w-75">GLX 1.5T 6MT 2WD 6AB</a>
+                    </p>                    
+                </div>
+                <div class="col-12 col-sm-4 my-3">
+                    <p class="text-center">
+                        <a href="#" class="modelos__cta-botonAzul w-75">GLX 1.5T 6AT 2WD 6AB</a>
+                    </p>                    
+                </div>
+                <div class="col-12 col-sm-4 my-3">
+                    <p class="text-center">
+                        <a href="#" class="modelos__cta-botonAzul w-75">LIMITED 1.5T 6AT 2WD 6AB</a>
+                    </p>                    
+                </div>
+                <div class="col-12 col-sm-4 my-3">
+                    <p class="text-center">
+                        <a href="#" class="modelos__cta-botonAzul w-75">GLX 1.6TD 6MT 2WD 6AB</a>
+                    </p>                    
+                </div>
+                <div class="col-12 col-sm-4 my-3">
+                    <p class="text-center">
+                        <a href="#" class="modelos__cta-botonAzul w-75">GLX 1.6TD 6AT 2WD 6AB</a>
+                    </p>                    
+                </div>
+            </div>
+        </div>
+        <!-- <div class="container-fluid m-0 p-0">
+            <div class="row modelos__cta g-0 align-items-center px-5 py-5">
+                <div class="col-12 col-sm-6">
+                    <h2 class="modelos__cta-title">Compara nuestros modelos entre ellos o con la competencia.</h2>
+                </div>
+                <div class="col-12 col-sm-6 text-center">
+                    <a href="#" class="modelos__cta-botonBlanco">Ir a tabla de comparación</a>
+                </div>
+            </div>
+        </div> -->
+        
+
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+
+            $("#tablaVersiones").change(function(){
+                if($(this).val() == "m1"){
+                    $(".modelo_1").addClass("tablaActive");
+                    $(".modelo_1").removeClass("tablaHide");
+                    $(".modelo_2").addClass("tablaHide");
+                    $(".modelo_2").removeClass("tablaActive");
+                    $(".modelo_3").addClass("tablaHide");
+                    $(".modelo_3").removeClass("tablaActive");
+                    $(".modelo_4").addClass("tablaHide");
+                    $(".modelo_4").removeClass("tablaActive");
+                    $(".modelo_5").addClass("tablaHide");
+                    $(".modelo_5").removeClass("tablaActive");
+                    $(".modelo_6").addClass("tablaHide");
+                    $(".modelo_6").removeClass("tablaActive");
+                } else if ($(this).val() == "m2"){
+                    $(".modelo_2").addClass("tablaActive");
+                    $(".modelo_2").removeClass("tablaHide");
+                    $(".modelo_1").addClass("tablaHide");
+                    $(".modelo_1").removeClass("tablaActive");
+                    $(".modelo_3").addClass("tablaHide");
+                    $(".modelo_3").removeClass("tablaActive");
+                    $(".modelo_4").addClass("tablaHide");
+                    $(".modelo_4").removeClass("tablaActive");
+                    $(".modelo_5").addClass("tablaHide");
+                    $(".modelo_5").removeClass("tablaActive");
+                    $(".modelo_6").addClass("tablaHide");
+                    $(".modelo_6").removeClass("tablaActive");
+                } else if ($(this).val() == "m3"){
+                    $(".modelo_3").addClass("tablaActive");
+                    $(".modelo_3").removeClass("tablaHide");
+                    $(".modelo_1").addClass("tablaHide");
+                    $(".modelo_1").removeClass("tablaActive");
+                    $(".modelo_2").addClass("tablaHide");
+                    $(".modelo_2").removeClass("tablaActive");
+                    $(".modelo_4").addClass("tablaHide");
+                    $(".modelo_4").removeClass("tablaActive");
+                    $(".modelo_5").addClass("tablaHide");
+                    $(".modelo_5").removeClass("tablaActive");
+                    $(".modelo_6").addClass("tablaHide");
+                    $(".modelo_6").removeClass("tablaActive");
+                } else if ($(this).val() == "m4"){
+                    $(".modelo_4").addClass("tablaActive");
+                    $(".modelo_4").removeClass("tablaHide");
+                    $(".modelo_1").addClass("tablaHide");
+                    $(".modelo_1").removeClass("tablaActive");
+                    $(".modelo_2").addClass("tablaHide");
+                    $(".modelo_2").removeClass("tablaActive");
+                    $(".modelo_3").addClass("tablaHide");
+                    $(".modelo_3").removeClass("tablaActive");
+                    $(".modelo_5").addClass("tablaHide");
+                    $(".modelo_5").removeClass("tablaActive");
+                    $(".modelo_6").addClass("tablaHide");
+                    $(".modelo_6").removeClass("tablaActive");
+                } else if ($(this).val() == "m5"){
+                    $(".modelo_5").addClass("tablaActive");
+                    $(".modelo_5").removeClass("tablaHide");
+                    $(".modelo_1").addClass("tablaHide");
+                    $(".modelo_1").removeClass("tablaActive");
+                    $(".modelo_2").addClass("tablaHide");
+                    $(".modelo_2").removeClass("tablaActive");
+                    $(".modelo_3").addClass("tablaHide");
+                    $(".modelo_3").removeClass("tablaActive");
+                    $(".modelo_4").addClass("tablaHide");
+                    $(".modelo_4").removeClass("tablaActive");
+                    $(".modelo_6").addClass("tablaHide");
+                    $(".modelo_6").removeClass("tablaActive");
+                } else if ($(this).val() == "m6"){
+                    $(".modelo_6").addClass("tablaActive");
+                    $(".modelo_6").removeClass("tablaHide");
+                    $(".modelo_1").addClass("tablaHide");
+                    $(".modelo_1").removeClass("tablaActive");
+                    $(".modelo_2").addClass("tablaHide");
+                    $(".modelo_2").removeClass("tablaActive");
+                    $(".modelo_3").addClass("tablaHide");
+                    $(".modelo_3").removeClass("tablaActive");
+                    $(".modelo_4").addClass("tablaHide");
+                    $(".modelo_4").removeClass("tablaActive");
+                    $(".modelo_5").addClass("tablaHide");
+                    $(".modelo_5").removeClass("tablaActive");
+                }
+            });
+
+            $("#tablaAtributos").change(function(){
+                if($(this).val() == "a1"){
+                    $(".atributo_1").removeClass("tablaHide");
+                    $(".atributo_2").removeClass("tablaHide");
+                    $(".atributo_3").removeClass("tablaHide");
+                    $(".atributo_4").removeClass("tablaHide");
+                    $(".atributo_5").removeClass("tablaHide");
+                } else if ($(this).val() == "a2"){
+                    $(".atributo_1").removeClass("tablaHide");
+                    $(".atributo_2").addClass("tablaHide");
+                    $(".atributo_3").addClass("tablaHide");
+                    $(".atributo_4").addClass("tablaHide");
+                    $(".atributo_5").addClass("tablaHide");
+
+                } else if ($(this).val() == "a3"){
+                    $(".atributo_2").removeClass("tablaHide");
+                    $(".atributo_1").addClass("tablaHide");
+                    $(".atributo_3").addClass("tablaHide");
+                    $(".atributo_4").addClass("tablaHide");
+                    $(".atributo_5").addClass("tablaHide");
+
+                } else if ($(this).val() == "a4"){
+                    $(".atributo_3").removeClass("tablaHide");
+                    $(".atributo_1").addClass("tablaHide");
+                    $(".atributo_2").addClass("tablaHide");
+                    $(".atributo_4").addClass("tablaHide");
+                    $(".atributo_5").addClass("tablaHide");
+
+                } else if ($(this).val() == "a5"){
+                    $(".atributo_4").removeClass("tablaHide");
+                    $(".atributo_1").addClass("tablaHide");
+                    $(".atributo_2").addClass("tablaHide");
+                    $(".atributo_3").addClass("tablaHide");
+                    $(".atributo_5").addClass("tablaHide");
+                } else if ($(this).val() == "a6"){
+                    $(".atributo_5").removeClass("tablaHide");
+                    $(".atributo_1").addClass("tablaHide");
+                    $(".atributo_2").addClass("tablaHide");
+                    $(".atributo_3").addClass("tablaHide");
+                    $(".atributo_4").addClass("tablaHide");
+                }
+            });  
+        });
+    </script>
+</body>
+</html>
