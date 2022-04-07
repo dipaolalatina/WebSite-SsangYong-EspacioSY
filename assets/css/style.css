@@ -511,7 +511,6 @@ img.modelos__img-auto{
 .modelos__cta-botonAzul{
     text-decoration: none;
     font-family: 'Roboto', Helvetica, Arial, sans-serif;
-    font-style: italic;
     background-color: #001F4F;
     border-radius: 60px;
     color: #fff;
@@ -525,6 +524,29 @@ img.modelos__img-auto{
 .modelos__cta-botonAzul:hover{
     box-shadow: 1px 1px 3px #606060;
     color: #fff;
+}
+
+.btn-volver{
+    text-decoration: none;
+    font-family: 'Roboto', Helvetica, Arial, sans-serif;
+    background-color: #fff;
+    border-radius: 60px;
+    color: #001F4F;
+    font-style: italic;
+    font-weight: 700;
+    font-size: 1rem;
+    padding: 15px 60px;
+    transition: 0.3s;
+    border: 2px solid #001F4F;
+    background-image: url('../images/arrow-back.svg');
+    background-repeat: no-repeat;
+    background-size: 30px;
+    background-position: 10% 50%;
+}
+
+.btn-volver:hover{
+    box-shadow: 1px 1px 3px #606060;
+    color: #001F4F;
 }
 
 /* Circulares */
