@@ -454,6 +454,35 @@ h2.modelos__cta-title{
     background-color: #80b2ff;
 }
 
+.modelos__cta-botonVerde{
+    background-image: url('../images/icon_rayo.svg');
+    background-size: 28px;
+    background-position: 8% 50%;
+    background-repeat: no-repeat;
+    text-decoration: none;
+    font-family: 'Roboto', Helvetica, Arial, sans-serif;
+    font-style: italic;
+    background-color: rgb(29, 197, 23);
+    border-radius: 60px;
+    color: #fff;
+    font-weight: 900;
+    font-size: 1rem;
+    padding: 15px 40px 15px 60px;
+    transition: 0.3s;
+}
+
+@media (min-width: 576px) { 
+    .modelos__cta-botonverde{        
+        font-size: 1.5rem;
+        padding: 15px 40px 15px 60px;
+    }
+}
+
+.modelos__cta-botonVerde:hover{
+    color: #fff;
+    background-color: rgb(8, 161, 3);
+}
+
 h3.modelos__list-title{
     color: #001F4F;
     font-family: 'Roboto', Helvetica, Arial, sans-serif;
