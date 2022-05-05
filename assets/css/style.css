@@ -466,14 +466,14 @@ h2.modelos__cta-title{
     border-radius: 60px;
     color: #fff;
     font-weight: 900;
-    font-size: 1rem;
+    font-size: .8rem;
     padding: 15px 40px 15px 60px;
     transition: 0.3s;
 }
 
 @media (min-width: 576px) { 
     .modelos__cta-botonDescarga{        
-        font-size: 1.5rem;
+        font-size: 1rem;
         padding: 15px 40px 15px 60px;
     }
 }
@@ -495,15 +495,15 @@ h2.modelos__cta-title{
     border-radius: 60px;
     color: #fff;
     font-weight: 900;
-    font-size: .9rem;
-    padding: 10px 40px 10px 50px;
+    font-size: .8rem;
+    padding: 15px 40px 15px 60px;
     transition: 0.3s;
 }
 
 @media (min-width: 576px) { 
     .modelos__cta-botonVerde{        
-        font-size: .9rem;
-        padding: 10px 40px 10px 50px;
+        font-size: 1rem;
+        padding: 15px 40px 15px 60px;
     }
 }
 
@@ -869,6 +869,7 @@ h2.modelosTabla__title{
 
 table.tablaModelos{
     color: #001f4e;
+    margin-bottom: 0;
 }
 
 table.tablaModelos > thead > tr > th{
