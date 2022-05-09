@@ -743,11 +743,12 @@ ul.espacioSY__lista > li:before {
 }
 
 .espacioSY__seccion-2{
-    background-image: url('../images/espacioSY__bg.jpg');
+    /* background-image: url('../images/espacioSY__bg.jpg');
     background-position: 50% 50%;
     background-repeat: no-repeat;
-    background-size: cover;
-    padding: 50px 0;
+    background-size: cover;*/
+    padding: 50px 0; 
+    background-color: #001039;
 }
 
 h2.espacioSY__title-blanco{
@@ -758,8 +759,16 @@ h2.espacioSY__title-blanco{
     font-size: 2.5rem;
 }
 
+.espacioSY__seccion-3{
+    background-image: url('../images/quienesSomos/bg_icons.jpg');
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50px 20px;
+}
+
 h5.espacioSY__subtitle{
-    color: #217ab5;
+    color: #fff;
     font-size: 1rem;
 }
 
@@ -775,6 +784,48 @@ p.espacioSY__parrafo-2{
 
 span.espacioSY__guionRojo{
     color: #d54022;
+}
+
+p.espacioSY__parrafoIcon{
+    color: #fff;
+    font-size: .9rem;
+}
+
+img.espacioSY__icons-img{
+    width: 100%;
+    max-width: 380px;
+}
+
+span.espacioSY__iconsPuntos-1,
+span.espacioSY__iconsPuntos-2,
+span.espacioSY__iconsPuntos-3{
+    font-family: 'Roboto', Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 2.1rem;
+    margin: 0px 5px;
+}
+
+span.espacioSY__iconsPuntos-1{
+    color: #f7cc7e;
+}
+
+span.espacioSY__iconsPuntos-2{
+    color: #e25830;
+}
+
+span.espacioSY__iconsPuntos-3{
+    color: #ffa629;
+}
+
+a.espacioSY__icons-btn{
+    background-color: #fff;
+    font-family: 'Roboto', Helvetica, Arial, sans-serif;
+    color: #001039;
+    padding: 8px 30px;
+    font-weight: bold;
+    font-style: italic;
+    text-decoration: none;
 }
 
 /* Sitio en construccion */
