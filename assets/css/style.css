@@ -920,7 +920,7 @@ h2.modelosTabla__title{
 
 table.tablaModelos{
     color: #001f4e;
-    margin-bottom: 0;
+    margin-bottom: 20px;
 }
 
 table.tablaModelos > thead > tr > th{
