@@ -10,6 +10,7 @@
   - [Musso Grand](https://dipaolalatina.github.io/WebSite-SsangYong-EspacioSY/modelos-tabla/Musso-Grand.html)
   - [Rexton](https://dipaolalatina.github.io/WebSite-SsangYong-EspacioSY/modelos-tabla/Rexton.html)
   - [Tivoli](https://dipaolalatina.github.io/WebSite-SsangYong-EspacioSY/modelos-tabla/Tivoli.html)
+  - [Torrres](https://dipaolalatina.github.io/WebSite-SsangYong-EspacioSY/modelos-tabla/Torres.html)
 - [Novedades](https://dipaolalatina.github.io/WebSite-SsangYong-EspacioSY/novedades/)
 - [Preguntas Frecuentes](https://dipaolalatina.github.io/WebSite-SsangYong-EspacioSY/preguntas-frecuentes/)
 - Sitio en construcción
