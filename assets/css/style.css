@@ -272,6 +272,14 @@ h2.novedadSingle__title{
     font-style: italic;
 }
 
+h3.novedadSingle__subtitle{
+    color: #001F4F;
+    font-weight: 500;
+    font-family: 'Roboto', Arial, sans-serif;
+    font-style: italic;
+    font-size: 1.5rem;
+}
+
 .novedadSingle__carrulesFotosItem{
     width: 93%;
     margin: 0 auto;
