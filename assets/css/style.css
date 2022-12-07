@@ -428,6 +428,7 @@ h2.modelos__cta-title{
     transition: 0.3s;
 }
 
+
 @media (min-width: 576px) { 
     .modelos__cta-botonBlanco{        
         font-size: 1.5rem;
@@ -438,6 +439,30 @@ h2.modelos__cta-title{
 .modelos__cta-botonBlanco:hover{
     color: #001F4F;
     background-color: #80b2ff;
+}
+
+.modelos__cta-btnCapa{
+    background-image: url('../images/icon_download.svg');
+    background-repeat: no-repeat;
+    background-size: 28px;
+    background-position: 8% 50%;
+    background-color: rgb(85, 159, 243);
+    padding: 15px 40px 15px 60px;
+    transition: 0.3s;
+    text-decoration: none;
+    font-family: 'Roboto', Helvetica, Arial, sans-serif;
+    font-style: italic;
+    border-radius: 60px;
+    color: #001F4F;
+    font-weight: 900;
+    font-size: 1rem;
+}
+
+@media (min-width: 576px) { 
+    .modelos__cta-btnCapa{
+        font-size: 1.5rem;
+        padding: 17px 50px 17px 60px;
+    }
 }
 
 .modelos__cta-botonDescarga{
