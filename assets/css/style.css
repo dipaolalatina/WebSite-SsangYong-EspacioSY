@@ -474,10 +474,6 @@ h2.modelos__cta-title{
 }
 
 .modelos__cta-botonDescarga{
-    background-image: url('../images/icon_download.svg');
-    background-size: 28px;
-    background-position: 8% 50%;
-    background-repeat: no-repeat;
     text-decoration: none;
     font-family: 'Roboto', Helvetica, Arial, sans-serif;
     font-style: italic;
@@ -486,14 +482,14 @@ h2.modelos__cta-title{
     color: #fff;
     font-weight: 900;
     font-size: .8rem;
-    padding: 15px 40px 15px 60px;
+    padding: 15px 40px;
     transition: 0.3s;
 }
 
 @media (min-width: 576px) { 
     .modelos__cta-botonDescarga{        
         font-size: 1rem;
-        padding: 15px 40px 15px 60px;
+        padding: 15px 40px;
     }
 }
 
