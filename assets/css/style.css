@@ -982,3 +982,11 @@ table.tablaModelos > tbody > tr > td.tituloAtributos{
     font-weight: 700;
     text-transform: uppercase;
 }
+
+.hover-thumb{
+    transition: 100ms;
+}
+
+.hover-thumb:hover{
+    opacity: .5;
+}
