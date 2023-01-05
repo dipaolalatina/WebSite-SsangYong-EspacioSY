@@ -319,6 +319,11 @@ h3.novedadSingle__subtitle{
     height: 5rem;
 }
 
+.carousel-control-next-icon.arrow-color-slider, .carousel-control-prev-icon.arrow-color-slider{
+    width: 1.2rem;
+    height: 1.2rem;
+}
+
 .novedadSigle__descargarImgs{
     padding-top:10px;
     text-align: right;
@@ -989,4 +994,118 @@ table.tablaModelos > tbody > tr > td.tituloAtributos{
 
 .hover-thumb:hover{
     opacity: .5;
+}
+
+.modelo__btnVersion-carrusel{
+    text-decoration: none;
+    font-family: 'Roboto', Helvetica, Arial, sans-serif;
+    background-color: #fff;
+    border-radius: 60px;
+    color: #001F4F;
+    font-style: italic;
+    font-weight: 900;
+    font-size: 1rem;
+    padding: 9px 50px;
+    transition: 0.3s;
+    border: 1px solid #001F4F;
+}
+
+.checked{
+    background-color: #001F4F!important;
+    color: #fff!important;
+    border: 0!important;
+}
+
+
+.carousel-inner{
+    width: 90%;
+    margin: 0 auto;
+}
+
+@media (max-width: 767px) {
+    .carousel-inner .carousel-item>div {
+        display: none
+    }
+
+    .carousel-inner .carousel-item>div:first-child {
+        display: block
+    }
+}
+
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+    display: flex
+}
+
+@media (min-width: 768px) {
+
+    .carousel-inner .carousel-item-end.active,
+    .carousel-inner .carousel-item-next {
+        transform: translateX(25%)
+    }
+
+    .carousel-inner .carousel-item-start.active,
+    .carousel-inner .carousel-item-prev {
+        transform: translateX(-25%)
+    }
+}
+
+.carousel-inner .carousel-item-end,
+.carousel-inner .carousel-item-start {
+    transform: translateX(0)
+}
+
+.con-borde{
+    border: 4px solid #001F4F!important;
+}
+
+.modelo__textColor{
+    font-size: .75rem;
+    font-weight: 600;
+    line-height: 1rem;
+}
+
+.mostrar{
+    display: block!important;
+}
+
+/* TIVOLI */
+
+.tivoli-color-1, .tivoli-color-2, .tivoli-color-3, .tivoli-color-4, .tivoli-color-5, .tivoli-color-6{
+    border: 4px solid #667895;
+    transition: 300ms;
+    height: 55px;
+    max-width: 55px;
+    border-radius: 60px;
+}
+
+.tivoli-color-1{
+    background-color: #ffffff;
+}
+
+.tivoli-color-2{
+    background-color: #87919d;
+}
+
+.tivoli-color-3{
+    background-color: #212e45;
+}
+
+.tivoli-color-4{
+    background-color: #505558;
+}
+
+.tivoli-color-5{
+    background-color: #000000;
+}
+
+.tivoli-color-6{
+    background-color: #ba2a2a;
+}        
+
+.auto-1, .auto-2, .auto-3, .auto-4, .auto-5, .auto-6{
+    width: 100%;
+    display:none;
+    transition: 300ms;
 }
