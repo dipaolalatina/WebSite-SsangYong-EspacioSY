@@ -1004,10 +1004,11 @@ table.tablaModelos > tbody > tr > td.tituloAtributos{
     color: #001F4F;
     font-style: italic;
     font-weight: 900;
-    font-size: 1rem;
-    padding: 9px 50px;
+    font-size: .8rem;
+    padding: 9px 20px;
     transition: 0.3s;
     border: 1px solid #001F4F;
+    width: 200px
 }
 
 .checked{
@@ -1108,4 +1109,218 @@ table.tablaModelos > tbody > tr > td.tituloAtributos{
     width: 100%;
     display:none;
     transition: 300ms;
+}
+
+h5.modelos__titulo-new{
+    color: #001F4F;
+    font-family: 'Roboto', Helvetica, Arial, sans-serif;
+    font-weight: 800;
+}
+
+table.tablaModelos_new{
+    color: #001f4e;
+    margin-bottom: 20px;
+}
+
+table.tablaModelos_new > thead > tr > th{
+    border: 2px solid #001f4e;
+    padding: 12px 0px;
+}
+
+table.tablaModelos_new > thead > tr > th.tablaVersiones_Atributos,
+table.tablaModelos_new > thead > tr > th.tablaVersiones_Versiones{
+    background-color: #001f4e;
+}
+
+table.tablaModelos_new > thead > tr > th > select#tablaVersiones,
+table.tablaModelos_new > thead > tr > th > select#tablaAtributos{
+    border: none;
+    width: 100%;
+    padding: 0px 20px;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+    background-color: transparent;
+}
+
+table.tablaModelos_new > thead > tr > th > select#tablaVersiones:focus,
+table.tablaModelos_new > thead > tr > th > select#tablaAtributos:focus{
+    outline: none
+}
+
+table.tablaModelos_new > thead > tr > th > select#tablaVersiones > option,
+table.tablaModelos_new > thead > tr > th > select#tablaAtributos > option{
+    color: #001f4e;
+}
+
+table.tablaModelos_new > tbody > tr > td{
+    border: 1px solid #001f4e;
+    padding: 12px 0px;
+    font-size: .8rem;
+}
+
+table.tablaModelos_new > tbody > tr > td.tituloAtributos{
+    text-align: left;
+    padding-left: 50px;
+    color: #fff;
+    background-color: #001f4e;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.tab_content-tablaModelos{
+    padding: 30px;
+    border-right: 3px solid #001F4F;
+    border-left: 3px solid #001F4F;
+    border-bottom: 3px solid #001F4F;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.nav-tabsModelos{
+    border-bottom: 3px solid #001F4F!important;
+}
+
+.nav-tabsModelos-btn{
+    margin: 0 auto;
+    margin-bottom: -4px!important;
+    transition: none;
+    font-size: .8rem;
+    line-height: 1rem;
+    padding: .1rem .3rem .5rem .3rem;
+    color: #001F4F;
+    font-weight: 700;
+}
+
+.nav-tabsModelos-btn:focus, .nav-tabsModelos-btn:hover{
+    border: 0px;
+    outline: none;
+}
+
+.nav-tabsModelos-btn.active{
+    border-color: #001F4F #001F4F #fff!important;
+    border: 3px solid;
+}
+
+.nav-tabsModelos-btn > div.modelo_tab-simple,
+.nav-tabsModelos-btn > div.modelo_tab-dobleBR{
+    border: 2px solid #001F4F;
+    border-radius: 5px;
+}
+
+.nav-tabsModelos-btn > div.modelo_tab-simple{
+    padding: 1rem 0.5rem;
+}
+
+.nav-tabsModelos-btn > div.modelo_tab-dobleBR{
+    padding: .5rem .5rem;
+}
+
+.nav-tabsModelos-btn.active > div.modelo_tab-simple,
+.nav-tabsModelos-btn.active > div.modelo_tab-dobleBR{
+    border: transparent;
+}
+
+#versionesCarousel > div.carousel-inner{
+    width: 90%;
+}
+
+.version-1, .version-2, .version-3, .version-4, .version-5, .version-6, .version-7, .version-8{
+    display: none;
+}
+
+h6.modelo__text-TC{
+    color: #001F4F;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.modelos__cta-TC{
+    text-decoration: none;
+    font-family: 'Roboto', Helvetica, Arial, sans-serif;
+    font-style: italic;
+    background-color: #6DC9C5;
+    border-radius: 60px;
+    color: #fff;
+    font-weight: 900;
+    font-size: 1rem;
+    padding: 15px 20px;
+    transition: 0.3s;
+}
+
+
+@media (min-width: 576px) { 
+    .modelos__cta-TC{        
+        font-size: 1rem;
+        padding: 17px 50px;
+    }
+}
+
+.modelos__cta-TC:hover{
+    background-color: #98f5f0;
+    color: #fff;
+}
+
+div.seperador{
+    background-color: #001f4e;
+    width: 80%;
+    margin: 40px auto;
+    height: 1px;
+}
+
+
+.modelos__cta-botonDescarga-2{
+    text-decoration: none;
+    font-family: 'Roboto', Helvetica, Arial, sans-serif;
+    font-style: italic;
+    background-color: #001F4F;
+    border-radius: 60px;
+    color: #fff;
+    font-weight: 900;
+    font-size: .8rem;
+    padding: 15px 40px;
+    transition: 0.3s;
+}
+
+.modelos__cta-botonDescarga-2:hover{
+    box-shadow: 1px 1px 3px #606060;
+    color: #fff;
+}
+
+.modelos__cta-botonVerde-2{
+    background-image: url('../images/icon_rayo.svg');
+    background-size: 28px;
+    background-position: 8% 50%;
+    background-repeat: no-repeat;
+    text-decoration: none;
+    font-family: 'Roboto', Helvetica, Arial, sans-serif;
+    font-style: italic;
+    background-color: rgb(29, 197, 23);
+    border-radius: 60px;
+    color: #fff;
+    font-weight: 900;
+    font-size: .8rem;
+    padding: 15px 40px 15px 60px;
+    transition: 0.3s;
+}
+
+.modelos__cta-botonVerde-2:hover{
+    color: #fff;
+    background-color: rgb(8, 161, 3);
+}
+
+.modelo__titulo-contenido{
+    color: #001F4F;
+    font-family: 'Roboto', Helvetica, Arial, sans-serif;
+    font-weight: 900;
+}
+
+a.modelo__link-contenido{
+    text-decoration: none;
+    color: #001F4F;
+    font-size: .8rem;
+    line-height: 1rem;
+}
+
+a.modelo__link-contenido:hover{
+    text-decoration: underline;
 }
