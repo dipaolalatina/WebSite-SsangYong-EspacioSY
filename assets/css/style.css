@@ -201,6 +201,11 @@ h1.novedades__title{
     font-style: italic;
     text-transform: uppercase;
 }
+h3.novedades__title{
+    color: #001F4F;
+    font-family: 'Roboto', Arial, sans-serif;
+    font-style: italic;
+}
 
 h6.novedades__subtitle{
     color: #606060;
@@ -1037,18 +1042,19 @@ table.tablaModelos > tbody > tr > td.tituloAtributos{
 .carousel-inner .carousel-item-next,
 .carousel-inner .carousel-item-prev {
     display: flex
+
 }
 
 @media (min-width: 768px) {
 
     .carousel-inner .carousel-item-end.active,
     .carousel-inner .carousel-item-next {
-        transform: translateX(25%)
+        transform: translateX(100%)
     }
 
     .carousel-inner .carousel-item-start.active,
     .carousel-inner .carousel-item-prev {
-        transform: translateX(-25%)
+        transform: translateX(-100%)
     }
 }
 
