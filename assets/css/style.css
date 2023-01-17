@@ -1071,15 +1071,19 @@ table.tablaModelos > tbody > tr > td.tituloAtributos{
     display: block!important;
 }
 
+
+
+
 /* TIVOLI */
 
-.tivoli-color-1, .tivoli-color-2, .tivoli-color-3, .tivoli-color-4, .tivoli-color-5, .tivoli-color-6{
+.tivoli-color-1, .tivoli-color-2, .tivoli-color-3, .tivoli-color-4, .tivoli-color-5, .tivoli-color-6, .tivoli-color-7{
     border: 4px solid #667895;
     transition: 300ms;
     height: 55px;
     max-width: 55px;
     border-radius: 60px;
 }
+
 
 .tivoli-color-1{
     background-color: #ffffff;
@@ -1090,22 +1094,219 @@ table.tablaModelos > tbody > tr > td.tituloAtributos{
 }
 
 .tivoli-color-3{
-    background-color: #212e45;
+    background-color: #040542;
 }
 
 .tivoli-color-4{
-    background-color: #505558;
+    background-color: #4e4e4e;
 }
 
 .tivoli-color-5{
-    background-color: #000000;
+    background-color: #000;
 }
 
 .tivoli-color-6{
-    background-color: #ba2a2a;
-}        
+    background-color: #880808;
+}
 
-.auto-1, .auto-2, .auto-3, .auto-4, .auto-5, .auto-6{
+
+
+.auto-1, .auto-2, .auto-3, .auto-4, .auto-5, .auto-6, .auto-7{
+    width: 100%;
+    display:none;
+    transition: 300ms;
+}
+
+
+
+/* KORANDO */
+
+.korando-color-1, .korando-color-2, .korando-color-3, .korando-color-4, .korando-color-5, .korando-color-6{
+    border: 4px solid #667895;
+    transition: 300ms;
+    height: 55px;
+    max-width: 55px;
+    border-radius: 60px;
+}
+
+
+.korando-color-1{
+    background-color: #fff;
+}
+
+.korando-color-2{
+    background-color: #9b9b9b;
+}
+
+.korando-color-3{
+    background-color: #05176b;
+}
+
+.korando-color-4{
+    background-color: #4e4e4e;
+}
+
+.korando-color-5{
+    background-color: #000;
+}
+
+.korando-color-6{
+    background-color: #880808;
+}
+
+
+
+.autok-1, .autok-2, .autok-3, .autok-4, .autok-5, .autok-6{
+    width: 100%;
+    display:none;
+    transition: 300ms;
+}
+
+/* TORRES */
+
+.torres-color-1, .torres-color-2, .torres-color-3, .torres-color-4, .torres-color-5, .torres-color-6, .torres-color-7, .torres-color-8, .torres-color-9,.torres-color-10, .torres-color-11, .torres-color-12{
+    border: 4px solid #667895;
+    transition: 300ms;
+    height: 55px;
+    max-width: 55px;
+    border-radius: 60px;
+}
+
+
+.torres-color-1{
+    background-color: #880808;
+}
+
+.torres-color-2{
+    background-color: #fff;
+}
+
+.torres-color-3{
+    background-color: #9b9b9b;
+}
+
+.torres-color-4{
+    background-color: #4e4e4e;
+}
+
+.torres-color-5{
+    background-color: rgb(3, 68, 25);
+}
+
+.torres-color-6{
+    background-color: #1d1d8d;
+}
+.torres-color-7{
+    background-color: rgb(0, 0, 0);
+}
+.torres-color-8{
+    background-color: #880808;
+}
+.torres-color-9{
+    background-color: #fff;
+}
+.torres-color-10{
+    background-color: #9b9b9b;
+}
+.torres-color-11{
+    background-color: #4e4e4e;
+}
+.torres-color-12{
+    background-color: rgb(3, 68, 25);
+}
+
+
+
+.autot-1, .autot-2, .autot-3, .autot-4, .autot-5, .autot-6, .autot-7, .autot-8, .autot-9, .autot-10, .autot-11, .autot-12{
+    width: 100%;
+    display:none;
+    transition: 300ms;
+}
+
+/* MUSSO */
+
+.musso-color-1, .musso-color-2, .musso-color-3, .musso-color-4, .musso-color-5, .musso-color-6, .musso-color-7{
+    border: 4px solid #667895;
+    transition: 300ms;
+    height: 55px;
+    max-width: 55px;
+    border-radius: 60px;
+}
+
+
+.musso-color-1{
+    background-color: #ffffff;
+}
+
+.musso-color-2{
+    background-color: #87919d;
+}
+
+.musso-color-3{
+    background-color: #083a1b;
+}
+
+.musso-color-4{
+    background-color: #880808;
+}
+
+.musso-color-5{
+    background-color: rgb(13, 8, 85);
+}
+
+.musso-color-6{
+    background-color: #38383b;
+}
+.musso-color-7{
+    background-color: #000;
+}
+
+
+
+.autom-1, .autom-2, .autom-3, .autom-4, .autom-5, .autom-6, .autom-7{
+    width: 100%;
+    display:none;
+    transition: 300ms;
+}
+
+/* REXTON */
+
+.rexton-color-1, .rexton-color-2, .rexton-color-3, .rexton-color-4, .rexton-color-5, .rexton-color-6{
+    border: 4px solid #667895;
+    transition: 300ms;
+    height: 55px;
+    max-width: 55px;
+    border-radius: 60px;
+}
+
+
+.rexton-color-1{
+    background-color: #ffffff;
+}
+
+.rexton-color-2{
+    background-color: #87919d;
+}
+
+.rexton-color-3{
+    background-color: #b8b8b8;
+}
+
+.rexton-color-4{
+    background-color: #363636;
+}
+
+.rexton-color-5{
+    background-color: rgb(13, 8, 85);
+}
+
+.rexton-color-6{
+    background-color: #38383b;
+}
+
+
+
+.autor-1, .autor-2, .autor-3, .autor-4, .autor-5, .autor-6{
     width: 100%;
     display:none;
     transition: 300ms;
@@ -1224,7 +1425,7 @@ table.tablaModelos_new > tbody > tr > td.tituloAtributos{
     width: 90%;
 }
 
-.version-1, .version-2, .version-3, .version-4, .version-5, .version-6, .version-7, .version-8{
+.version-1, .version-2, .version-3, .version-4, .version-5, .version-6, .version-7, .version-8 {
     display: none;
 }
 
