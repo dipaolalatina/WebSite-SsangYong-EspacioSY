@@ -1019,7 +1019,7 @@ table.tablaModelos>tbody>tr>td.tituloAtributos {
     .modelo__btnVersion-carrusel {
         font-size: .6rem;
         padding: 9px 13px;
-        width: 165px;
+        width: 190px;
     }
 }
 
@@ -1027,7 +1027,7 @@ table.tablaModelos>tbody>tr>td.tituloAtributos {
     .modelo__btnVersion-carrusel {
         padding: 9px 20px;
         font-size: .7rem;
-        width: 200px;
+        width: 225px;
     }
 }
 
@@ -1297,7 +1297,7 @@ table.tablaModelos_new {
 
 table.tablaModelos_new>thead>tr>th {
     border: 2px solid #001f4e;
-    padding: 12px 0px;
+    padding: 12px 5px;
 }
 
 table.tablaModelos_new>thead>tr>th.tablaVersiones_Atributos,
@@ -1328,7 +1328,7 @@ table.tablaModelos_new>thead>tr>th>select#tablaAtributos>option {
 
 table.tablaModelos_new>tbody>tr>td {
     border: 1px solid #001f4e;
-    padding: 12px 0px;
+    padding: 12px 5px;
     font-size: .8rem;
     text-transform: uppercase;
 }
@@ -1363,6 +1363,7 @@ table.tablaModelos_new>tbody>tr>td.tituloAtributos {
     padding: .1rem .3rem .5rem .3rem;
     color: #001F4F;
     font-weight: 700;
+    width: 20%;
 }
 
 @media (min-width: 1200px) {
@@ -1393,6 +1394,7 @@ table.tablaModelos_new>tbody>tr>td.tituloAtributos {
     border: 2px solid #001F4F;
     border-radius: 5px;
     text-transform: uppercase;
+    width: 100%;
 }
 
 .nav-tabsModelos-btn>div.modelo_tab-simple {
@@ -1401,7 +1403,7 @@ table.tablaModelos_new>tbody>tr>td.tituloAtributos {
 
 @media (min-width: 1200px) {
     .nav-tabsModelos-btn>div.modelo_tab-simple {
-        padding: 1rem .9rem;
+        padding: 1.5rem 0rem;
     }
 }
 

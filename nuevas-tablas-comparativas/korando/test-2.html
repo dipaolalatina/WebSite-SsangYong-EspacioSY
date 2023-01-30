@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es_ES">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Espacio Ssang Yong</title>
+    <!-- Bootstrap core CSS -->
+    <link href="../../assets/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="../../assets/css/style.css" rel="stylesheet">
+
+    <style type = "text/css">
+      #draggable-3 { 
+         width: 100px; height: 50px; padding: 0.5em; float: left;
+         margin: 21px 5px 10px 0;
+         cursor: pointer;
+      }
+      #droppable-6 { 
+         width: 120px; height: 90px;padding: 0.5em; float: left; 
+         margin: 10px; 
+      }
+      .active {
+         border-color : blue;
+         background : grey;
+      }  
+      .hover {
+         border-color : red;
+         background : green;
+      }
+      .quitar{
+         display: none!important;
+      }
+      .boton-quitar-ejemplo{
+         display: none;
+      }
+      .mostrar-2{
+         display: inline-block;
+         /* top: 0!important;
+         left: 0!important; */
+      }
+   </style>
+
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                  <div id = "draggable-3" class = "ui-widget-content">
+                     <p>Drag me to my target</p>
+                  </div>
+                  <div id="droppable-6" class = "ui-widget-header">
+                     <button class="boton-quitar-ejemplo">
+                        quitar
+                     </button>
+                     <p>Drop here</p>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+   <script src="../../assets/js/bootstrap.bundle.min.js"></script>
+   <script src = "https://code.jquery.com/jquery-1.10.2.js"></script>
+   <script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+   <script>
+   $(function() {
+      $("#draggable-3").data({
+         'originalLeft': $("#draggable-3").css('left'),
+         'origionalTop': $("#draggable-3").css('top')
+      });
+
+      $( "#draggable-3" ).draggable();
+      $( "#droppable-6" ).droppable({
+
+         hoverClass:  "hover",
+         drop: function( event, ui ) {
+            $( this ).addClass( "ui-state-highlight" )
+            .find( "p" )
+            .html( "Dropped!" );
+            $("#draggable-3").addClass("quitar");
+            $(".boton-quitar-ejemplo").addClass("mostrar-2");
+         }
+      });
+      $(".boton-quitar-ejemplo").click(function () {
+         $("#draggable-3").css({
+            'left': $("#draggable-3").data('originalLeft'),
+            'top': $("#draggable-3").data('origionalTop')
+         })
+         $("#draggable-3").addClass("mostrar-2");
+         $(".boton-quitar-ejemplo").removeClass("mostrar-2");
+      });
+   });
+   </script>
+</body>
+
+</html>
