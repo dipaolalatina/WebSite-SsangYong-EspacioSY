@@ -7,7 +7,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-.container-img{
+/* .container-img{
     width: 100%;
     max-width: 1900px;
     margin: auto;
@@ -32,7 +32,7 @@
 }
 .container-img .box-img:nth-child(4){
     grid-row-start: span 2;
-}
+} */
 h1.novedades__title{
     color: #001F4F;
     font-family: 'Roboto', Arial, sans-serif;
