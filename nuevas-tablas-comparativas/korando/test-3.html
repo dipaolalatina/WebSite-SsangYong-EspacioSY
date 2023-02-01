@@ -28,6 +28,9 @@
          top: 50%;
          left: 50%;
       }
+      .quitar{
+         display: none!important;
+      }
    </style>
 
 </head>
@@ -39,8 +42,10 @@
                 <div class="col">
                   <div id="draggable"></div>
 
-                  <div id="droppable"></div>
-                  <input class="reset" type="submit">    
+                  <div id="droppable">
+                     <input class="reset" type="submit">
+                  </div>
+                      
                 </div>
             </div>
         </div>
@@ -69,6 +74,7 @@
             drop: function(event, ui) 
             {
                $(this).find("#draggable").html();
+               $("#draggable").addClass("quitar");
             }
          });
 
@@ -77,6 +83,7 @@
                'left': $("#draggable").data('originalLeft'),
                'top': $("#draggable").data('origionalTop')}
             );
+            $("#draggable").removeClass("quitar");
          });
       });
    </script>

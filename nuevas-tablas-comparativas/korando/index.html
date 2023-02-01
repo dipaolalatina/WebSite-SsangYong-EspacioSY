@@ -60,8 +60,8 @@
            $('.droppable-7').droppable({
               hoverClass: 'active',
               drop: function(e, ui) {
-                //  $(this).html(ui.draggable.remove().html());
-                //  $(this).droppable('destroy');
+                 $(this).html(ui.draggable.remove().html());
+                 $(this).droppable('destroy');
                  $( this )
                  .addClass( "ui-state-highlight" )
                  .find( "p" )

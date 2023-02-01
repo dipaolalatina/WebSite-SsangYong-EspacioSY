@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es_ES">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Espacio Ssang Yong</title>
+    <!-- Bootstrap core CSS -->
+    <link href="../../assets/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="../../assets/css/style.css" rel="stylesheet">
+  
+    <style>
+      .day, .no-day {
+         border: 5px dashed transparent;
+         background: #ddd;
+         margin: 1em;
+         min-height: 8em;
+         padding: 1em;
+         width: 20em;
+         transition: 300ms;
+         }
+
+         .day.hovering, .no-day.hovering {
+         background: #b6d6fb;
+         border-color: #276cbc;
+         transition: 300ms;
+         }
+
+         .item, .no-item {
+         background: white;
+         cursor: pointer;
+         display: inline-block;
+         padding: 1em;
+         width: 200px;;      
+         }
+
+         .quitar{display:none; transition: 500ms;}
+    </style>
+  </head>
+  <body>
+   <div class="container">
+      <div class="row">
+         <div class="col-4">
+            <!-- <input class="reset" type="submit"> -->
+            <div class="day start">
+               <div class="item item-1 mb-1">Version 1</div>
+               <div class="item item-2 mb-1">Version 2</div>
+               <div class="item item-3 mb-1">Version 3</div>
+               <!-- <div class="no-item">Competencia</div> -->
+            </div>
+
+            <div class="no-day comp-1 quitar">
+               <div class="no-item">Competencia Version 1</div>
+            </div>
+
+            <div class="no-day comp-2 quitar">
+               <div class="no-item">Competencia Version 2</div>
+            </div>
+
+         </div>
+         <div class="col-4">
+            <div class="day">
+               <div class="auto-version-1 quitar">
+                  <input class="reset-version" type="submit">
+                  <img src="../../assets/images/modelos/colores/korando/modelos-colores_1468x902-azul.png" class="w-100" alt="">
+               </div>
+               <div class="auto-version-2 quitar">
+                  <input class="reset-version" type="submit">
+                  <img src="../../assets/images/modelos/colores/korando/modelos-colores_1468x902-blanco.png" class="w-100" alt="">
+               </div>
+               <div class="auto-version-3 quitar">
+                  <input class="reset-version" type="submit">
+                  <img src="../../assets/images/modelos/colores/korando/modelos-colores_1468x902-grafito.png" class="w-100" alt="">
+               </div>
+            </div>
+         </div>
+         <div class="col-4">
+            <div class="no-day">
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <script src = "https://code.jquery.com/jquery-1.10.2.js"></script>
+   <script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+   <script>
+      $( '.item-1,.item-2,.item-3' ).draggable({
+         helper: 'clone'
+      });
+
+      $( '.no-item' ).draggable({
+         helper: 'clone'
+      });
+
+      $( '.day' ).droppable({
+         accept: '.item-1,.item-2,.item-3',
+         hoverClass: 'hovering',
+         drop: function( ev, ui ) {
+            ui.draggable.detach();
+            $( this ).append( ui.draggable );
+            $('.start').addClass('quitar');
+            
+            $('.item').addClass('quitar');
+            if ($('.item-1').is('.ui-draggable-dragging')) {
+               $('.auto-version-1').removeClass('quitar');
+               $('.comp-1').removeClass('quitar');
+            }
+            if ($('.item-1').is('.ui-draggable-dragging')) {
+               $('.auto-version-1').removeClass('quitar');
+            } else if ($('.item-2').is('.ui-draggable-dragging')) {
+               $('.auto-version-2').removeClass('quitar');
+            } else {
+               $('.auto-version-3').removeClass('quitar');
+            }
+         }
+      });
+
+      $( '.no-day' ).droppable({
+         accept: '.no-item',
+         hoverClass: 'hovering',
+         drop: function( ev, ui ) {
+            ui.draggable.detach();
+            $( this ).append( ui.draggable );
+         }
+      });
+
+      $('.reset-version').click(function () {
+         $('.item').detach().appendTo('.start');
+         // $('.no-item').detach().appendTo('.start');
+         $('.start').removeClass('quitar');
+         $('.auto-version-1').addClass('quitar');
+         $('.auto-version-2').addClass('quitar');
+         $('.auto-version-3').addClass('quitar');
+         $('.item').removeClass('quitar');
+      });
+   </script>
+  </body>
+</html>

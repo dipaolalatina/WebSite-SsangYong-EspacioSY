@@ -49,10 +49,10 @@
         <div class="container">
             <div class="row">
                 <div class="col">
-                  <div id = "draggable-3" class = "ui-widget-content">
+                  <div id = "draggable-3">
                      <p>Drag me to my target</p>
                   </div>
-                  <div id="droppable-6" class = "ui-widget-header">
+                  <div id="droppable-6">
                      <button class="boton-quitar-ejemplo">
                         quitar
                      </button>
@@ -69,14 +69,14 @@
    <script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
    <script>
    $(function() {
+      $( "#draggable-3" ).draggable();
+
       $("#draggable-3").data({
          'originalLeft': $("#draggable-3").css('left'),
          'origionalTop': $("#draggable-3").css('top')
       });
-
-      $( "#draggable-3" ).draggable();
+      
       $( "#droppable-6" ).droppable({
-
          hoverClass:  "hover",
          drop: function( event, ui ) {
             $( this ).addClass( "ui-state-highlight" )
