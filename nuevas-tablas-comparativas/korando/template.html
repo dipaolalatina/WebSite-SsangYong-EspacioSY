@@ -12,7 +12,7 @@
     <link href="../../assets/css/style.css" rel="stylesheet">
   
     <style>
-      .day, .no-day {
+      .day, .no-day, .tablaCom__listaVersiones {
          border: 5px dashed transparent;
          background: #ddd;
          margin: 1em;
@@ -28,7 +28,7 @@
          transition: 300ms;
          }
 
-         .item, .no-item {
+         .item, .no-item-1, .no-item-2, .no-item-3 {
          background: white;
          cursor: pointer;
          display: inline-block;
@@ -42,24 +42,29 @@
   <body>
    <div class="container">
       <div class="row">
+
          <div class="col-4">
-            <!-- <input class="reset" type="submit"> -->
-            <div class="day start">
+            <div class="tablaCom__listaVersiones">
                <div class="item item-1 mb-1">Version 1</div>
                <div class="item item-2 mb-1">Version 2</div>
                <div class="item item-3 mb-1">Version 3</div>
-               <!-- <div class="no-item">Competencia</div> -->
             </div>
 
             <div class="no-day comp-1 quitar">
-               <div class="no-item">Competencia Version 1</div>
+               <div class="no-item-1 competencia-v1-1">Competencia Version 1</div>
+               <div class="no-item-1 competencia-v1-2">Competencia Version 1-1</div>
             </div>
 
             <div class="no-day comp-2 quitar">
-               <div class="no-item">Competencia Version 2</div>
+               <div class="no-item-2 competencia-v2-1">Competencia Version 2</div>
+            </div>
+
+            <div class="no-day comp-3 quitar">
+               <div class="no-item-3 competencia-v3-1">Competencia Version 3</div>
             </div>
 
          </div>
+
          <div class="col-4">
             <div class="day">
                <div class="auto-version-1 quitar">
@@ -76,10 +81,31 @@
                </div>
             </div>
          </div>
+
          <div class="col-4">
             <div class="no-day">
+               <!-- Competencia 1 -->
+               <div class="auto-comp-v1-1 quitar">
+                  <input class="reset-comp" type="submit">
+                  <img src="https://www.chevrolet.com/content/dam/chevrolet/na/us/english/vdc-collections/2023/perfomance/corvette/01-images/nav/2023-corvette-3lt-gkz-driver-front-3quarter-nav.jpg" class="w-100" alt="">
+               </div>
+               <div class="auto-comp-v1-2 quitar">
+                  <input class="reset-comp" type="submit">
+                  <img src="https://cars.usnews.com/static/images/Auto/izmo/i159615234/2023_acura_integra_angularfront.jpg" class="w-100" alt="">
+               </div>
+               <!-- Competencia 2 -->
+               <div class="auto-comp-v2-1 quitar">
+                  <input class="reset-comp" type="submit">
+                  <img src="https://images.drive.com.au/driveau/image/upload/c_fill,h_1080,w_1920/q_auto:eco/f_auto/v1/cms/uploads/jjslyagf8e3gcny2doyy" class="w-100" alt="">
+               </div>               
+               <!-- Competencia 3 -->
+               <div class="auto-comp-v3-1 quitar">
+                  <input class="reset-comp" type="submit">
+                  <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/2019-honda-civic-sedan-1558453497.jpg" class="w-100" alt="">
+               </div>
             </div>
          </div>
+
       </div>
    </div>
 
@@ -90,7 +116,7 @@
          helper: 'clone'
       });
 
-      $( '.no-item' ).draggable({
+      $( '.no-item-1,.no-item-2,.no-item-3' ).draggable({
          helper: 'clone'
       });
 
@@ -100,40 +126,72 @@
          drop: function( ev, ui ) {
             ui.draggable.detach();
             $( this ).append( ui.draggable );
-            $('.start').addClass('quitar');
-            
+            $('.tablaCom__listaVersiones').addClass('quitar');            
             $('.item').addClass('quitar');
+
             if ($('.item-1').is('.ui-draggable-dragging')) {
                $('.auto-version-1').removeClass('quitar');
                $('.comp-1').removeClass('quitar');
-            }
-            if ($('.item-1').is('.ui-draggable-dragging')) {
-               $('.auto-version-1').removeClass('quitar');
             } else if ($('.item-2').is('.ui-draggable-dragging')) {
                $('.auto-version-2').removeClass('quitar');
+               $('.comp-2').removeClass('quitar');
             } else {
                $('.auto-version-3').removeClass('quitar');
+               $('.comp-3').removeClass('quitar');
             }
          }
       });
 
       $( '.no-day' ).droppable({
-         accept: '.no-item',
+         accept: '.no-item-1,.no-item-2,.no-item-3',
          hoverClass: 'hovering',
          drop: function( ev, ui ) {
             ui.draggable.detach();
             $( this ).append( ui.draggable );
-         }
+
+            if ($('.competencia-v1-1').is('.ui-draggable-dragging')) {
+               $('.auto-comp-v1-1').removeClass('quitar');
+               $('.competencia-v1-1').addClass('quitar');
+               $('.no-day').droppable('disable');
+               $('.competencia-v1-2').css("cursor","no-drop");
+            } else if ($('.competencia-v1-2').is('.ui-draggable-dragging')) {
+               $('.auto-comp-v1-2').removeClass('quitar');
+               $('.competencia-v1-2').addClass('quitar');
+               $('.no-day').droppable('disable');
+            } else if ($('.competencia-v2-1').is('.ui-draggable-dragging')){
+               $('.auto-comp-v2-1').removeClass('quitar');
+               $('.competencia-v2-1').addClass('quitar');
+               $('.no-day').droppable('disable');
+            } else {
+               $('.auto-comp-v3-1').removeClass('quitar');
+               $('.competencia-v3-1').addClass('quitar');
+               $('.no-day').droppable('disable');
+            }
+         }   
       });
 
       $('.reset-version').click(function () {
-         $('.item').detach().appendTo('.start');
-         // $('.no-item').detach().appendTo('.start');
-         $('.start').removeClass('quitar');
-         $('.auto-version-1').addClass('quitar');
-         $('.auto-version-2').addClass('quitar');
-         $('.auto-version-3').addClass('quitar');
+         $('.item').detach().appendTo('.tablaCom__listaVersiones');
+         $('.no-item-1').detach().appendTo('.comp-1');
+         $('.no-item-2').detach().appendTo('.comp-2');
+         $('.no-item-3').detach().appendTo('.comp-3');
+         $('.no-day').droppable('enable');
+         $('.tablaCom__listaVersiones').removeClass('quitar');
+         $('.auto-version-1,.auto-version-2,.auto-version-3').addClass('quitar');
          $('.item').removeClass('quitar');
+         $('.comp-1,.comp-2,.comp-3').addClass('quitar');
+         $('.auto-comp-v1-1,.auto-comp-v1-2,.auto-comp-v2-1,.auto-comp-v3-1').addClass('quitar');
+         $('.no-item-1,.no-item-2,no-item-3').removeClass('quitar');
+         
+      });
+
+      $('.reset-comp').click(function () {
+         $('.no-item-1').detach().appendTo('.comp-1');
+         $('.no-item-2').detach().appendTo('.comp-2');
+         $('.no-item-3').detach().appendTo('.comp-3');
+         $('.no-day').droppable('enable');
+         $('.auto-comp-v1-1,.auto-comp-v1-2,.auto-comp-v2-1,.auto-comp-v3-1').addClass('quitar');
+         $('.no-item-1,.no-item-2,.no-item-3').removeClass('quitar');     
       });
    </script>
   </body>
