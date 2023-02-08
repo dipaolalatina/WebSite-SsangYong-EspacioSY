@@ -972,7 +972,7 @@ table.tablaModelos {
 
 table.tablaModelos>thead>tr>th {
     border: 2px solid #001f4e;
-    padding: 12px 0px;
+    padding: 20px 0px;
 }
 
 table.tablaModelos>thead>tr>th.tablaVersiones_Atributos,
@@ -1003,12 +1003,12 @@ table.tablaModelos>thead>tr>th>select#tablaAtributos>option {
 
 table.tablaModelos>tbody>tr>td {
     border: 1px solid #001f4e;
-    padding: 12px 0px;
+    padding: 12px 10px;
 }
 
 table.tablaModelos>tbody>tr>td.tituloAtributos {
     text-align: left;
-    padding-left: 50px;
+    padding-left: 20px;
     color: #fff;
     background-color: #001f4e;
     font-weight: 700;
@@ -1128,7 +1128,7 @@ table.tablaModelos>tbody>tr>td.tituloAtributos {
 .color-9,
 .color-10,
 .color-11,
-.color-12{
+.color-12 {
     border: 4px solid #667895;
     transition: 300ms;
     height: 55px;
@@ -1231,28 +1231,28 @@ table.tablaModelos>tbody>tr>td.tituloAtributos {
 }
 
 .torres-color-8 {
-    background: rgb(0,0,0);
-    background: linear-gradient(135deg, rgba(0,0,0,1) 49%, rgba(136,8,8,1) 50%);
+    background: rgb(0, 0, 0);
+    background: linear-gradient(135deg, rgba(0, 0, 0, 1) 49%, rgba(136, 8, 8, 1) 50%);
 }
 
 .torres-color-9 {
-    background: rgb(0,0,0);
-    background: linear-gradient(135deg, rgba(0,0,0,1) 49%, rgba(255,255,255,1) 50%);
+    background: rgb(0, 0, 0);
+    background: linear-gradient(135deg, rgba(0, 0, 0, 1) 49%, rgba(255, 255, 255, 1) 50%);
 }
 
 .torres-color-10 {
-    background: rgb(0,0,0);
-    background: linear-gradient(135deg, rgba(0,0,0,1) 49%, rgba(155,155,155,1) 50%);
+    background: rgb(0, 0, 0);
+    background: linear-gradient(135deg, rgba(0, 0, 0, 1) 49%, rgba(155, 155, 155, 1) 50%);
 }
 
 .torres-color-11 {
-    background: rgb(0,0,0);
-    background: linear-gradient(135deg, rgba(0,0,0,1) 49%, rgba(78,78,78,1) 50%);
+    background: rgb(0, 0, 0);
+    background: linear-gradient(135deg, rgba(0, 0, 0, 1) 49%, rgba(78, 78, 78, 1) 50%);
 }
 
 .torres-color-12 {
-    background: rgb(0,0,0);
-    background: linear-gradient(135deg, rgba(0,0,0,1) 49%, rgba(3,68,25,1) 50%);
+    background: rgb(0, 0, 0);
+    background: linear-gradient(135deg, rgba(0, 0, 0, 1) 49%, rgba(3, 68, 25, 1) 50%);
 }
 
 .musso-color-1 {
@@ -1683,22 +1683,22 @@ a.modelo__link-contenido:hover {
     grid-gap: 20px;
 }
 
-.modelos__container-img .box-img figure{
+.modelos__container-img .box-img figure {
     width: 100%;
     height: 100%;
 }
 
-.modelos__container-img .box-img img{
+.modelos__container-img .box-img img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-.modelos__container-img .box-img:nth-child(1){
+.modelos__container-img .box-img:nth-child(1) {
     grid-column-start: span 2;
 }
 
-.modelos__container-img .box-img:nth-child(4){
+.modelos__container-img .box-img:nth-child(4) {
     grid-row-start: span 2;
 }
 
@@ -1706,7 +1706,7 @@ h1.modelos__title {
     color: #001F4F;
     font-family: 'Roboto', Arial, sans-serif;
     font-style: italic;
-    text-transform: none!important;
+    text-transform: none !important;
 }
 
 h4.modelos__itemTitle {
@@ -1716,34 +1716,144 @@ h4.modelos__itemTitle {
     font-size: 1.2rem;
 }
 
-.modelos__container-img  a {
+.modelos__container-img a {
     box-shadow: 0 0 6px rgba(0, 0, 0, .5);
 
 }
 
-.modelos__container-img > .box-img > a:hover img {
+.modelos__container-img>.box-img>a:hover img {
     filter: blur(2px);
     transform: rotate(10deg) scale (1.3);
-    
+
 }
 
-@media screen and (max-width:800px){
-    .modelos__container-img{
+@media screen and (max-width:800px) {
+    .modelos__container-img {
         width: 95%;
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 10px;
         grid-template-rows: 200px;
     }
-    .modelos__container-img .box-img:nth-child(1){
+
+    .modelos__container-img .box-img:nth-child(1) {
         grid-column-start: span 1;
     }
 }
-@media screen and (max-width:500px){
-    .modelos__container-img{
+
+@media screen and (max-width:500px) {
+    .modelos__container-img {
         width: 90%;
         grid-template-columns: repeat(1, 1fr);
     }
-    .modelos__container-img .box-img img{
+
+    .modelos__container-img .box-img img {
         height: 200px;
     }
+}
+
+/* Nuevas Tablas comparativas*/
+
+.tablaCom__landComp,
+.tablaCom__landVersiones {
+    border: 5px dashed #001F4F;
+    background: #ddd;
+    margin: 1em;
+    height: 200px;
+    padding: 1em;
+    width: 270px;
+    /* transition: 300ms; */
+    border-radius: 20px;
+    text-align: center;
+}
+
+/* .tablaCom__landVersiones.hovering,
+.tablaCom__landComp.hovering,
+.tablaCom__landVersiones:hover,
+.tablaCom__landComp:hover {
+    background: #b6d6fb;
+    border-color: #276cbc;
+    transition: 300ms;
+} */
+
+.tablaCom__landComp > div > img {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.item-v,
+.item-c {
+    text-decoration: none;
+    font-family: 'Roboto', Helvetica, Arial, sans-serif;
+    font-style: italic;
+    background-color: #001F4F;
+    border-radius: 60px;
+    color: #fff;
+    font-weight: 900;
+    font-size: .8rem;
+    padding: 15px 30px;
+    text-transform: uppercase;
+    width: 245px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.quitar {
+    display: none;
+    transition: 500ms;
+}
+
+.tablaComparacion>thead>tr>th {
+    border: 0 !important;
+}
+
+h5.tablaCom__subtitle {
+    color: #001F4F;
+    font-weight: 700;
+    font-family: 'Roboto', Arial, sans-serif;
+    font-style: italic;
+}
+
+h6.tablaCom__text-TC {
+    color: #001F4F;
+}
+
+.tablaCom__botonesConteiner {
+    margin-top: 190px;
+}
+
+button.reset-version,
+button.reset-comp {
+    background-image: url('../images/icon_delete.svg');
+    background-repeat: no-repeat;
+    background-size: 22%;
+    background-position: 85% 49%;
+    background-color: #ff0000;
+    color: #fff;
+    border: 0;
+    border-radius: 60px;
+    padding: 7px 40px 7px 15px;
+    font-weight: 700;
+    font-size: .9rem;
+    transition: 300ms;
+}
+
+button.reset-version:hover,
+button.reset-comp:hover{
+    background-color: #8d0202;
+}
+
+.tablaCom__landText-version, .tablaCom__landText-comp{
+    text-transform: uppercase;
+    font-style: italic;
+    font-size: 1.2rem;    
+    line-height: 1.5rem;
+}
+
+.tablaCom__landText-version{
+    padding: 50px 10px;
+}
+
+.tablaCom__landText-comp{
+    padding: 35px 10px;
 }
