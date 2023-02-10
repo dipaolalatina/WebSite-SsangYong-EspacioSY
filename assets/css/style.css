@@ -968,6 +968,8 @@ h2.modelosTabla__title {
 table.tablaModelos {
     color: #001f4e;
     margin-bottom: 20px;
+    font-size: .8rem;
+    vertical-align: middle;
 }
 
 table.tablaModelos>thead>tr>th {
