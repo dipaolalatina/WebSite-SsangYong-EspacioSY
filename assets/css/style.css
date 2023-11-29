@@ -236,6 +236,14 @@ h2.novedades__sideBarRight-title {
     font-style: italic;
 }
 
+a.essy_link{
+    color: #013F8C;
+}
+
+a.essy_link:hover{
+    color: #001F4F;
+}
+
 a.novedades__sideBarRightOtherNews-title {
     color: #013F8C;
     text-decoration: none;
